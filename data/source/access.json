@@ -1,0 +1,47 @@
+{
+  "admin@njcdd.org": {
+    "dn": "cn=admin@njcdd.org,ou=users,dc=account,dc=njcdd,dc=org",
+    "firstName": "System",
+    "lastName": "Administrator",
+    "displayName": "System Administrator",
+    "account": "",
+    "roles": [
+      "operator",
+      "manager",
+      "admin"
+    ],
+    "isAuthenticated": true
+  },
+  "manager@njcd.org": {
+    "dn": "cn=manager@njcd.org,ou=users,dc=account,dc=njcdd,dc=org",
+    "firstName": "Office",
+    "lastName": "Manager",
+    "displayName": "Office Manager",
+    "account": "",
+    "roles": [
+      "operator",
+      "manager"
+    ],
+    "isAuthenticated": true
+  },
+  "operator@njcdd.org": {
+    "dn": "cn=operator@njcdd.org,ou=users,dc=account,dc=njcdd,dc=org",
+    "firstName": "Application",
+    "lastName": "Operator",
+    "displayName": "Application Operator",
+    "account": "",
+    "roles": [
+      "operator"
+    ],
+    "isAuthenticated": true
+  },
+  "member@njcdd.org": {
+    "dn": "cn=member@njcdd.org,ou=users,dc=account,dc=njcdd,dc=org",
+    "firstName": "Represented",
+    "lastName": "Member",
+    "displayName": "Represented Member",
+    "account": "",
+    "roles": [],
+    "isAuthenticated": true
+  }
+}

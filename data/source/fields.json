@@ -1,0 +1,798 @@
+{
+  "CountryCode": {
+    "approvalRequired": false,
+    "selectable": false,
+    "content": [
+      {
+        "key": "us",
+        "value": "US",
+        "description": "United States of America"
+      }
+    ]
+  },
+  "ContactPermission": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "announce",
+        "value": "Announcements",
+        "description": "Permitted to receive general accouncements"
+      },
+      {
+        "key": "advertise",
+        "value": "Advertising",
+        "description": "Permitted to receive advertising"
+      },
+      {
+        "key": "minutes",
+        "value": "Meeting Minutes",
+        "description": "Permitted to receive meeting minutes"
+      },
+      {
+        "key": "promotion",
+        "value": "Promotions",
+        "description": "Permitted to contact for promotions"
+      },
+      {
+        "key": "webinars",
+        "value": "Webinars",
+        "description": "Permitted to receive webinar announcements"
+      },
+      {
+        "key": "workshops",
+        "value": "Workshops",
+        "description": "Permitted to receive workshop announcements"
+      }
+    ]
+  },
+  "Disability": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "blind",
+        "value": "Visually Impaired",
+        "description": "Partial or complete visual impairment"
+      },
+      {
+        "key": "developmental",
+        "value": "Developmental Disability",
+        "description": "Developmental or intellectual impairment"
+      },
+      {
+        "key": "hearing",
+        "value": "Hearing Impaired",
+        "description": "Partial or complete auditory impairment"
+      },
+      {
+        "key": "mental",
+        "value": "Mental or Emotional Health",
+        "description": "Emotional or Mental Impairment"
+      },
+      {
+        "key": "optout",
+        "value": "Prefer not to say",
+        "description": "I prefer not to provide this information"
+      },
+      {
+        "key": "other",
+        "value": "Other Limitation",
+        "description": "Other impairment or disability not listed"
+      },
+      {
+        "key": "physical",
+        "value": "Physical Limitation",
+        "description": "Partial or complete physical limitation"
+      }
+    ]
+  },
+  "Ethnicity": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "amerindian",
+        "value": "American Indian or Alaska Native",
+        "description": ""
+      },
+      {
+        "key": "asian",
+        "value": "Asian",
+        "description": ""
+      },
+      {
+        "key": "black",
+        "value": "Black or African American",
+        "description": ""
+      },
+      {
+        "key": "caucasian",
+        "value": "White or Caucasian",
+        "description": ""
+      },
+      {
+        "key": "optout",
+        "value": "Prefer not to say",
+        "description": "I prefer not to provide this information"
+      },
+      {
+        "key": "pacisland",
+        "value": "Native Hawaiian /Pacific Islander",
+        "description": ""
+      },
+      {
+        "key": "latino",
+        "value": "Hispanic or Latino",
+        "description": ""
+      },
+      {
+        "key": "multiethnic",
+        "value": "Multiracial or Multiethnic",
+        "description": ""
+      }
+    ]
+  },
+  "Gender": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "agender",
+        "value": "Agender",
+        "description": ""
+      },
+      {
+        "key": "androgyne",
+        "value": "Androgyne",
+        "description": ""
+      },
+      {
+        "key": "androgynous",
+        "value": "Androgynous",
+        "description": ""
+      },
+      {
+        "key": "bigender",
+        "value": "Bi-Gender",
+        "description": ""
+      },
+      {
+        "key": "cisgender",
+        "value": "Cis-Gender",
+        "description": ""
+      },
+      {
+        "key": "cisfemale",
+        "value": "Cis-Female",
+        "description": ""
+      },
+      {
+        "key": "cismale",
+        "value": "Cis-Male",
+        "description": ""
+      },
+      {
+        "key": "cisman",
+        "value": "Cis-Man",
+        "description": ""
+      },
+      {
+        "key": "ciswoman",
+        "value": "Cis-Woman",
+        "description": ""
+      },
+      {
+        "key": "ftm",
+        "value": "Female to Male",
+        "description": ""
+      },
+      {
+        "key": "genderfluid",
+        "value": "Gender Fluid",
+        "description": ""
+      },
+      {
+        "key": "gendernonconforming",
+        "value": "Gender Nonconforming",
+        "description": ""
+      },
+      {
+        "key": "genderquestioning",
+        "value": "Gender Questioning",
+        "description": ""
+      },
+      {
+        "key": "gendervariant",
+        "value": "Gender Variant",
+        "description": ""
+      },
+      {
+        "key": "genderqueer",
+        "value": "Gender Queer",
+        "description": ""
+      },
+      {
+        "key": "mtf",
+        "value": "Male to Female",
+        "description": ""
+      },
+      {
+        "key": "neither",
+        "value": "Neither",
+        "description": ""
+      },
+      {
+        "key": "neutrois",
+        "value": "Neutrois",
+        "description": ""
+      },
+      {
+        "key": "nonbinary",
+        "value": "Non-Binary",
+        "description": ""
+      },
+      {
+        "key": "none",
+        "value": "No Gender Identification",
+        "description": "I do not identify with any gender"
+      },
+      {
+        "key": "optout",
+        "value": "Prefer not to say",
+        "description": "I prefer not to provide this information"
+      },
+      {
+        "key": "other",
+        "value": "Other",
+        "description": ""
+      },
+      {
+        "key": "pangender",
+        "value": "Pan-Gender",
+        "description": ""
+      },
+      {
+        "key": "trans",
+        "value": "Trans",
+        "description": ""
+      },
+      {
+        "key": "transfemale",
+        "value": "Trans-Female",
+        "description": ""
+      },
+      {
+        "key": "transmale",
+        "value": "Trans-Male",
+        "description": ""
+      },
+      {
+        "key": "transperson",
+        "value": "Trans-Person",
+        "description": ""
+      },
+      {
+        "key": "transwoman",
+        "value": "Trans-Woman",
+        "description": ""
+      },
+      {
+        "key": "transfeminine",
+        "value": "Trans-Feminine",
+        "description": ""
+      },
+      {
+        "key": "transgender",
+        "value": "Trans-Gender",
+        "description": ""
+      },
+      {
+        "key": "transmasculine",
+        "value": "Trans-Masculine",
+        "description": ""
+      },
+      {
+        "key": "twospirit",
+        "value": "Two-Spirit",
+        "description": ""
+      }
+    ]
+  },
+  "HonorificPrefix": {
+    "approvalRequired": false,
+    "label": "Personal Title",
+    "selectable": true,
+    "content": [
+      {
+        "key": "mr",
+        "value": "Mr.",
+        "description": "Mister"
+      },
+      {
+        "key": "ms",
+        "value": "Ms.",
+        "description": "Ms"
+      },
+      {
+        "key": "mrs",
+        "value": "Mrs.",
+        "description": "Missus"
+      },
+      {
+        "key": "dr",
+        "value": "Dr.",
+        "description": "Doctor"
+      },
+      {
+        "key": "hon",
+        "value": "Honorable",
+        "description": "The Honorable"
+      }
+    ]
+  },
+  "HonorificSuffix": {
+    "approvalRequired": false,
+    "label": "personalSuffix",
+    "selectable": true,
+    "content": [
+      {
+        "key": "do",
+        "value": "D.O.",
+        "description": "Doctor of Osteopathic Medicine"
+      },
+      {
+        "key": "dsw",
+        "value": "DSW",
+        "description": "Doctor of Social Work"
+      },
+      {
+        "key": "edd",
+        "value": "Ed.D",
+        "description": "Doctor of Education"
+      },
+      {
+        "key": "esq",
+        "value": "Esq.",
+        "description": "Esquire"
+      },
+      {
+        "key": "i",
+        "value": "I",
+        "description": "The First"
+      },
+      {
+        "key": "ii",
+        "value": "II",
+        "description": "The Second"
+      },
+      {
+        "key": "iii",
+        "value": "III",
+        "description": "The Third"
+      },
+      {
+        "key": "iv",
+        "value": "IV",
+        "description": "The Fourth"
+      },
+      {
+        "key": "jd",
+        "value": "JD",
+        "description": "Juris Doctor"
+      },
+      {
+        "key": "jr",
+        "value": "Jr.",
+        "description": "Junior"
+      },
+      {
+        "key": "lcsw",
+        "value": "LCSW",
+        "description": "Licensed Clinical Social Worker"
+      },
+      {
+        "key": "md",
+        "value": "MD.",
+        "description": "Doctor of Medicine"
+      },
+      {
+        "key": "msw",
+        "value": "MSW",
+        "description": "Master of Social Work"
+      },
+      {
+        "key": "phd",
+        "value": "Ph.D.",
+        "description": "Doctor of Philosophy"
+      },
+      {
+        "key": "psyd",
+        "value": "Psy.D.",
+        "description": "Doctor of Psychology"
+      },
+      {
+        "key": "sr",
+        "value": "Sr.",
+        "description": "Senior"
+      },
+      {
+        "key": "v",
+        "value": "V",
+        "description": "The Fifth"
+      }
+    ]
+  },
+  "Interests": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "diversity",
+        "value": "Diversity & Inclusion",
+        "description": ""
+      },
+      {
+        "key": "employment",
+        "value": "Employment",
+        "description": ""
+      },
+      {
+        "key": "familyadvoc",
+        "value": "Family Advocacy",
+        "description": ""
+      },
+      {
+        "key": "grantfunding",
+        "value": "Grant Funding",
+        "description": ""
+      },
+      {
+        "key": "health",
+        "value": "Health",
+        "description": ""
+      },
+      {
+        "key": "housing",
+        "value": "Housing",
+        "description": ""
+      },
+      {
+        "key": "selfadvoc",
+        "value": "Self-Advocacy",
+        "description": ""
+      },
+      {
+        "key": "specialed",
+        "value": "Special Education",
+        "description": ""
+      }
+    ]
+  },
+  "Language": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "eng",
+        "value": "English",
+        "description": "English Language"
+      },
+      {
+        "key": "fra",
+        "value": "French",
+        "description": "French Language"
+      },
+      {
+        "key": "spa",
+        "value": "Spanish",
+        "description": "Spanish Language"
+      }
+    ]
+  },
+  "MaritalStatus": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "divorced",
+        "value": "Divorced",
+        "description": "Legally Divorced"
+      },
+      {
+        "key": "married",
+        "value": "Married",
+        "description": "Legally Married"
+      },
+      {
+        "key": "partner",
+        "value": "Partnered",
+        "description": "Legal Social Partnership"
+      },
+      {
+        "key": "separated",
+        "value": "Separated",
+        "description": "Maritally Separated"
+      },
+      {
+        "key": "single",
+        "value": "Single",
+        "description": "Unmarried"
+      },
+      {
+        "key": "unknown",
+        "value": "Unknown",
+        "description": "Unknown"
+      },
+      {
+        "key": "widowed",
+        "value": "Widowed",
+        "description": "Widowed"
+      }
+    ]
+  },
+  "NJCDDRelationship": {
+    "approvalRequired": true,
+    "label": "NJCDD Relationship",
+    "selectable": true,
+    "content": [
+      {
+        "key": "devdisadvnet",
+        "value": "Developmental Disability Advocacy Network",
+        "description": ""
+      },
+      {
+        "key": "electedofficial",
+        "value": "Elected Official",
+        "description": "Elected Government Official"
+      },
+      {
+        "key": "legcausupage",
+        "value": "Legislative Caucus Supporting Agency",
+        "description": "NJCDD Legislative Caucus Agency"
+      },
+      {
+        "key": "legdiscaumem",
+        "value": "Legislative Disability Caucus",
+        "description": "NJCDD Legislative Disability Caucus Member"
+      },
+      {
+        "key": "njcddcouncil",
+        "value": "NJCDD Council",
+        "description": "NJCDD Council"
+      },
+      {
+        "key": "parpolpar",
+        "value": "Partners In Policymaking",
+        "description": "NJCDD Partners In Policymaking Participant"
+      },
+      {
+        "key": "peofir",
+        "value": "People First",
+        "description": "NJCDD County People First"
+      },
+      {
+        "key": "rfspcmember",
+        "value": "Regional Family Support Planning Council",
+        "description": "NJCDD RFSP Council Member"
+      }
+    ]
+  },
+  "PronounObject": {
+    "approvalRequired": false,
+    "label": "Pronoun as Object",
+    "selectable": true,
+    "content": [
+      {
+        "key": "her",
+        "value": "Her",
+        "description": "Her"
+      },
+      {
+        "key": "him",
+        "value": "Him",
+        "description": "Him"
+      },
+      {
+        "key": "them",
+        "value": "Them",
+        "description": "Them"
+      }
+    ]
+  },
+  "PronounSubject": {
+    "approvalRequired": false,
+    "label": "Pronoun as Subject",
+    "selectable": true,
+    "content": [
+      {
+        "key": "he",
+        "value": "He",
+        "description": "He"
+      },
+      {
+        "key": "she",
+        "value": "She",
+        "description": "She"
+      },
+      {
+        "key": "they",
+        "value": "They",
+        "description": "They"
+      }
+    ]
+  },
+  "Publication": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "advactnew",
+        "value": "Advocacy In Action E-Newsletter",
+        "description": ""
+      },
+      {
+        "key": "comgroedu",
+        "value": "Common Ground (Education)",
+        "description": ""
+      },
+      {
+        "key": "counot",
+        "value": "Council Notices",
+        "description": ""
+      },
+      {
+        "key": "disfocblo",
+        "value": "Disability in Focus Blog",
+        "description": ""
+      },
+      {
+        "key": "peofammag",
+        "value": "People and Families Magazine",
+        "description": ""
+      }
+    ]
+  },
+  "Role": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "agency",
+        "value": "Agency/Organization",
+        "description": "Agency or organizational entity"
+      },
+      {
+        "key": "agencyofficial",
+        "value": "Agency/Organization Official",
+        "description": "Official representative of an agency or organization"
+      },
+      {
+        "key": "caregiver",
+        "value": "Caregiver",
+        "description": "Representing the interests of a person in my care"
+      },
+      {
+        "key": "family",
+        "value": "Family",
+        "description": "Representing the interests of a family member"
+      },
+      {
+        "key": "guardian",
+        "value": "Guardian",
+        "description": "Representing the interests of a person over whom I hold guardianship"
+      },
+      {
+        "key": "optout",
+        "value": "Prefer not to say",
+        "description": "I prefer not to provide this information"
+      },
+      {
+        "key": "parent",
+        "value": "Parent",
+        "description": "Representing the interests of my child"
+      },
+      {
+        "key": "self",
+        "value": "Self-Advocate",
+        "description": "Representing my own interests"
+      },
+      {
+        "key": "sibling",
+        "value": "Sibling",
+        "description": "Representing the interests of one or more of my siblings"
+      }
+    ]
+  },
+  "SocialMediaPermission": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "republish",
+        "value": "Re-Publish",
+        "description": "Permitted to re-publish"
+      }
+    ]
+  },
+  "SocialMediaPlatform": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "website",
+        "value": "Web Site",
+        "description": ""
+      }
+    ]
+  },
+  "TelephoneType": {
+    "approvalRequired": false,
+    "label": "Telephone Type",
+    "selectable": true,
+    "content": [
+      {
+        "key": "fax",
+        "value": "Fax",
+        "description": "Facsimile receiveing device"
+      },
+      {
+        "key": "land",
+        "value": "Landline",
+        "description": "Wired telephone device"
+      },
+      {
+        "key": "mobile",
+        "value": "Mobile",
+        "description": "Mobile telephone device"
+      },
+      {
+        "key": "unknown",
+        "value": "Unknown",
+        "description": "Unknown telephone device"
+      }
+    ]
+  },
+  "Site": {
+    "approvalRequired": false,
+    "selectable": false,
+    "content": [
+      {
+        "key": "home",
+        "value": "Home",
+        "description": "Home use"
+      },
+      {
+        "key": "work",
+        "value": "Work",
+        "description": "Work use"
+      },
+      {
+        "key": "unknown",
+        "value": "Unknown",
+        "description": "Unknown use"
+      }
+    ]
+  },
+  "VerificationStatus": {
+    "approvalRequired": false,
+    "selectable": true,
+    "content": [
+      {
+        "key": "fail",
+        "value": "Failed",
+        "description": "Failed attempt at verification"
+      },
+      {
+        "key": "success",
+        "value": "Verified",
+        "description": "Successfully verified"
+      },
+      {
+        "key": "unverified",
+        "value": "Unverified",
+        "description": "No verification attempted"
+      }
+    ]
+  }
+}
