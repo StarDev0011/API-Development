@@ -1,0 +1,32 @@
+[
+  {
+    "_id": {
+      "$oid": "1000"
+    },
+    "owner": "tester.01@njcdd.org",
+    "name": "Tester01's Lists",
+    "group": null,
+    "comment": null,
+    "queries": []
+  },
+  {
+    "_id": {
+      "$oid": "1001"
+    },
+    "owner": "tester.02@njcdd.org",
+    "name": "Tester02's Lists",
+    "group": null,
+    "comment": null,
+    "queries": []
+  },
+  {
+    "_id": {
+      "$oid": "1002"
+    },
+    "owner": "tester.01@njcdd.org",
+    "name": "Tester01's Other Lists",
+    "group": null,
+    "comment": null,
+    "queries": []
+  }
+]

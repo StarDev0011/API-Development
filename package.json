@@ -1,7 +1,7 @@
 {
-  "name": "njcdd-api-mock",
+  "name": "njcdd-account-api",
   "version": "1.0.0",
-  "description": "Simulates & documents NJCDD REST API Calls",
+  "description": "NJCDD REST API service to access Account services",
   "main": "build/src/server.js",
   "author": "Tony Amos <68511451+agile-anthony@users.noreply.github.com>",
   "private": true,
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.4.1",
+    "@types/config": "^3.3.0",
     "@types/express": "^4.17.16",
     "@types/jest": "^29.4.0",
     "@types/lodash": "^4.14.191",

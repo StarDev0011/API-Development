@@ -1,3 +1,7 @@
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
 import { isArray, isPlainObject } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
@@ -13,7 +17,7 @@ describe('AccountController', () => {
     const testURL: string = `${suiteURL}/list`
     const accountCount = 21
 
-    it(`Get ${testURL}`, (done: DoneCallback) => {
+    it(`GET ${testURL}`, (done: DoneCallback) => {
       request(app)
         .get(testURL)
         .expect(200)
@@ -27,11 +31,13 @@ describe('AccountController', () => {
   })
 
   describe.each<TestAccountTuple>([
-    [ '635f0fc381285df6d6ccd265' ]
+    [ '635f115e81285df6d6ce2acd' ],
+    [ '635f100e81285df6d6ccf66a' ],
+    [ '635f116181285df6d6ce2d56' ]
   ])('Account %s', (accountId?: string) => {
     const testURL = `${suiteURL}/${accountId || ''}`
 
-    it(`Get ${testURL}`, (done: DoneCallback) => {
+    it(`GET ${testURL}`, (done: DoneCallback) => {
       request(app)
         .get(testURL)
         .expect(200)

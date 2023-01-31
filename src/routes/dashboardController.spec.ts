@@ -1,3 +1,7 @@
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
 import { isArray } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
@@ -7,7 +11,7 @@ const suiteURL = '/api/v1/dashboard'
 describe('DashboardController', () => {
 
   describe('Dashboard', () => {
-    it(`Get ${suiteURL}`, done => {
+    it(`GET ${suiteURL}`, done => {
       request(app)
         .get(suiteURL)
         .expect(200)

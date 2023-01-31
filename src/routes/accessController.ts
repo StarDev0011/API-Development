@@ -1,3 +1,7 @@
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
 import { Body, Controller, Get, Post, Route } from 'tsoa'
 import { Access, AccessCredentials, AccessRegister, AccessUser, AcknowledgeRequest } from '../models/access'
 import { AccessService } from '../services/accessService'
@@ -6,6 +10,11 @@ import { AccessService } from '../services/accessService'
 export class AccessController extends Controller {
   private readonly accessService = new AccessService()
 
+  /**
+   * Authenticate a registered login account
+   * @param {AccessCredentials} requestBody
+   * @returns {Promise<Access | AcknowledgeRequest>}
+   */
   @Post('authenticate')
   public async authenticate(@Body() requestBody: AccessCredentials): Promise<Access | AcknowledgeRequest> {
     return this.accessService
@@ -20,6 +29,10 @@ export class AccessController extends Controller {
       })
   }
 
+  /**
+   * Return the list of current staff
+   * @returns {Promise<Array<Access> | AcknowledgeRequest>}
+   */
   @Get('staff')
   public async getStaff(): Promise<Array<Access> | AcknowledgeRequest> {
     return this.accessService
@@ -34,6 +47,11 @@ export class AccessController extends Controller {
       })
   }
 
+  /**
+   * Register a new public login account
+   * @param {AccessRegister} requestBody
+   * @returns {Promise<AcknowledgeRequest>}
+   */
   @Post('register')
   public async registerContact(@Body() requestBody: AccessRegister): Promise<AcknowledgeRequest> {
     return this.accessService
@@ -48,6 +66,11 @@ export class AccessController extends Controller {
       })
   }
 
+  /**
+   * Reset the password for a registered login
+   * @param {AccessUser} requestBody
+   * @returns {Promise<AccessService>}
+   */
   @Post('reset')
   public async resetPassword(@Body() requestBody: AccessUser): Promise<AccessService> {
     return this.accessService

@@ -1,6 +1,6 @@
-import { FieldCatalog } from './field'
-
-const fieldCatalog = require('../../data/source/fields.json') as FieldCatalog
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
 
 type ContactPermission = string
 type CountryCode = string

@@ -1,3 +1,7 @@
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
 import { Controller, Get, Route } from 'tsoa'
 import { DashboardItem } from '../models/dashboard'
 import { DashboardService } from '../services/dashboardService'
@@ -6,6 +10,10 @@ const dashboardService = new DashboardService()
 
 @Route('dashboard')
 export class DashboardController extends Controller {
+  /**
+   * Return an array containing dashboard items
+   * @returns {Promise<Array<DashboardItem>>}
+   */
   @Get()
   public async getDashboard(): Promise<Array<DashboardItem>> {
     return Promise

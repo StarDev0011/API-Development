@@ -1,6 +1,11 @@
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
 import { Controller, Get, Route } from 'tsoa'
 import { Version } from '../models/version'
 import { VersionService } from '../services/versionService'
+
 
 @Route('version')
 export class VersionController extends Controller {
