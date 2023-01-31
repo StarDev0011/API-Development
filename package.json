@@ -1,6 +1,6 @@
 {
   "name": "njcdd-account-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NJCDD REST API service to access Account services",
   "main": "build/src/server.js",
   "author": "Tony Amos <68511451+agile-anthony@users.noreply.github.com>",
