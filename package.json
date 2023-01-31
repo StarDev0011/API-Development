@@ -1,6 +1,6 @@
 {
   "name": "njcdd-account-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NJCDD REST API service to access Account services",
   "main": "build/src/server.js",
   "author": "Tony Amos <68511451+agile-anthony@users.noreply.github.com>",
@@ -12,7 +12,7 @@
     "build": "yarn clean && tsoa spec-and-routes && tsc",
     "start": "node build/src/server.js",
     "preversion": "yarn test",
-    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
+    "postversion": "git push --tags && git push && echo \"Successfully released version $npm_package_version!\""
   },
   "dependencies": {
     "config": "^3.3.9",
