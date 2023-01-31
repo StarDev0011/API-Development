@@ -3,15 +3,15 @@ import request from 'supertest'
 import { app } from '../app'
 import DoneCallback = jest.DoneCallback
 
-type TestContactTuple = [ string | undefined ]
+type TestAccountTuple = [ string | undefined ]
 
-const suiteURL = '/api/v1/contact'
+const suiteURL = '/api/v1/account'
 
-describe('ContactController', () => {
+describe('AccountController', () => {
 
   describe('List', () => {
     const testURL: string = `${suiteURL}/list`
-    const contactCount = 21
+    const accountCount = 21
 
     it(`Get ${testURL}`, (done: DoneCallback) => {
       request(app)
@@ -19,17 +19,17 @@ describe('ContactController', () => {
         .expect(200)
         .expect('Content-Type', /json/)
         .expect(response => isArray(response.body))
-        .expect(response => response.body.length == contactCount)
+        .expect(response => response.body.length == accountCount)
         .then(() => {
           done()
         })
     })
   })
 
-  describe.each<TestContactTuple>([
+  describe.each<TestAccountTuple>([
     [ '635f0fc381285df6d6ccd265' ]
-  ])('Document %s', (contactId?: string) => {
-    const testURL = `${suiteURL}/document/${contactId || ''}`
+  ])('Account %s', (accountId?: string) => {
+    const testURL = `${suiteURL}/${accountId || ''}`
 
     it(`Get ${testURL}`, (done: DoneCallback) => {
       request(app)

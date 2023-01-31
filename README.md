@@ -1,7 +1,7 @@
-# NJCDD-API Mock
+# njcdd-account-api
 
-This an API that represents the NJCDD REST API calls and responses. It is meant to run in a
-Docker container and enable front-end development with no obstructions.
+This an API that represents the NJCDD Account REST API calls and responses. It is meant to run in a
+Docker container in order to enable front-end development with no obstructions.
 
 The OpenAPI (AKA Swagger) documentation is located at https://njcdd-api.dev.test/api-docs
 

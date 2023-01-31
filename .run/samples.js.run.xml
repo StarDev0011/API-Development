@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="samples.js" type="DatabaseScript" nameIsGenerated="true">
+        <script-file value="$PROJECT_DIR$/mongodb/samples.js"/>
+        <script-mode>FILE</script-mode>
+        <data-source id="f092774d-07b7-4404-9cf6-288d47ec4e62" namespace="schema/&quot;njcdd&quot;"/>
+        <method v="2"/>
+    </configuration>
+</component>

@@ -1,10 +1,14 @@
+import { FieldCatalog } from './field'
+
+const fieldCatalog = require('../../data/source/fields.json') as FieldCatalog
+
 type ContactPermission = string
 type CountryCode = string
 type Gender = string
 type HonorificPrefix = string
 type HonorificSuffix = string
 type Interest = string
-type Language<T extends string> = `${T}`
+type Language = 'eng' | 'fra' | 'spa'
 type MaritalStatus = string
 type PronounObject = string
 type PronounSubject = string
@@ -20,7 +24,7 @@ export type SingleElement = string | number | boolean | Date | null
 export type ListElement = HonorificPrefix | HonorificSuffix | Language | Role | Interest | Email |
   Telephone | Address | SocialMedia | Subscription
 
-export interface Contact {
+export interface Account {
   _id?: oid
   familyName: string | null
   givenName: string | null

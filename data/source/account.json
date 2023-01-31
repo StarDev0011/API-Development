@@ -1,0 +1,6272 @@
+[
+  {
+    "_id": {
+      "$oid": "635f121b81285df6d6ce892c"
+    },
+    "familyName": "Bell",
+    "givenName": "Christina",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "clapalomento@jeycommres.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "clapalomento@jeycommres.com",
+            "status": "invalid",
+            "sub_status": "no_dns_entries",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "clapalomento",
+            "domain": "jeycommres.com",
+            "domain_age_days": null,
+            "smtp_provider": "",
+            "mx_found": "false",
+            "mx_record": "",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:30:24.165"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "72136093",
+        "sourceFilename": "A_Quick_Guide_for_Families_Hardcopy_Request 2018.csv",
+        "recordIndex": 243,
+        "origin": "2018-12-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Christina",
+        "middle": "",
+        "last": "Bell",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f118081285df6d6ce4927"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "FRANC TEIXIERA",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "9 PLEASANT AVE",
+                "City": "LINCOLN PARK",
+                "State": "NJ",
+                "Zip5": "07035",
+                "Zip4": "1317"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "9 PLEASANT AVE",
+        "address2": null,
+        "city": "LINCOLN PARK",
+        "county": null,
+        "state": null,
+        "postalCode": "07035",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 780,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "FRANC",
+        "middle": "",
+        "last": "TEIXIERA",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f115e81285df6d6ce2acd"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "MONIQUE GIBILISCO",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "21 ASHLYN CT",
+                "City": "WAYNE",
+                "State": "NJ",
+                "Zip5": "07470",
+                "Zip4": "6401"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "21 ASHLYN CT",
+        "address2": null,
+        "city": "WAYNE",
+        "county": null,
+        "state": null,
+        "postalCode": "07470",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 3369,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "MONIQUE",
+        "middle": "",
+        "last": "GIBILISCO",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f108d81285df6d6cd6bf6"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "STANLEY SODEN",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "APT 2H",
+                "Address2": "384 2ND AVE",
+                "City": "LONG BRANCH",
+                "State": "NJ",
+                "Zip5": "07740",
+                "Zip4": "5766"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "384 2ND AVE APT 2H",
+        "address2": null,
+        "city": "LONG BRANCH",
+        "county": null,
+        "state": null,
+        "postalCode": "07740",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 4876,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "STANLEY",
+        "middle": "",
+        "last": "SODEN",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "¸"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "MAUREEN MINGLE",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "33 HOLTON LN",
+                "City": "ESSEX FELLS",
+                "State": "NJ",
+                "Zip5": "07021",
+                "Zip4": "1708"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "33 HOLTON LN",
+        "address2": null,
+        "city": "ESSEX FELLS",
+        "county": null,
+        "state": null,
+        "postalCode": "07021",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 596,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "MAUREEN",
+        "middle": "",
+        "last": "MINGLE",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f116181285df6d6ce2d56"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "ELIZABETH RESNICK",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "149 AVONDALE RD",
+                "City": "RIDGEWOOD",
+                "State": "NJ",
+                "Zip5": "07450",
+                "Zip4": "1301"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "149 AVONDALE RD",
+        "address2": null,
+        "city": "RIDGEWOOD",
+        "county": null,
+        "state": null,
+        "postalCode": "07450",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 3151,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "ELIZABETH",
+        "middle": "",
+        "last": "RESNICK",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f112981285df6d6cdfa13"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "JOYCE SAUNDERS",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "211 JOHNSON ST",
+                "City": "SALEM",
+                "State": "NJ",
+                "Zip5": "08079",
+                "Zip4": "1125"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "211 JOHNSON ST",
+        "address2": null,
+        "city": "SALEM",
+        "county": null,
+        "state": null,
+        "postalCode": "08079",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 7526,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "JOYCE",
+        "middle": "",
+        "last": "SAUNDERS",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10a681285df6d6cd8400"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "CLARA ABERNATHY",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "97 MILLER AVE",
+                "City": "ELMWOOD PARK",
+                "State": "NJ",
+                "Zip5": "07407",
+                "Zip4": "2131"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "97 MILLER AVE",
+        "address2": null,
+        "city": "ELMWOOD PARK",
+        "county": null,
+        "state": null,
+        "postalCode": "07407",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 2825,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "CLARA",
+        "middle": "",
+        "last": "ABERNATHY",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f102f81285df6d6cd1438"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "PAUL AQUINO",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "2004 S BRANCH DR",
+                "City": "WHITE HSE STA",
+                "State": "NJ",
+                "Zip5": "08889",
+                "Zip4": "3245"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "2004 S BRANCH DR",
+        "address2": null,
+        "city": "WHITE HSE STA",
+        "county": null,
+        "state": null,
+        "postalCode": "08889",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 12364,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "PAUL",
+        "middle": "",
+        "last": "AQUINO",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f105181285df6d6cd328a"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "JAMES WYNN",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "801 W STATE ST",
+                "City": "EWING",
+                "State": "NJ",
+                "Zip5": "08618",
+                "Zip4": "5325"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "801 W STATE ST",
+        "address2": null,
+        "city": "EWING",
+        "county": null,
+        "state": null,
+        "postalCode": "08618",
+        "countryCode": null,
+        "organization": "TRINITY CATHEDRAL",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 9777,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "JAMES",
+        "middle": "",
+        "last": "WYNN",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10b581285df6d6cd9089"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "ROSA FAVERAS",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "801 17TH ST",
+                "City": "UNION CITY",
+                "State": "NJ",
+                "Zip5": "07087",
+                "Zip4": "1927"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "801 17TH ST",
+        "address2": null,
+        "city": "UNION CITY",
+        "county": null,
+        "state": null,
+        "postalCode": "07087",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 1757,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "ROSA",
+        "middle": "",
+        "last": "FAVERAS",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f117881285df6d6ce40fc"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "POLERA",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "214 LAKE AVE",
+                "City": "LYNDHURST",
+                "State": "NJ",
+                "Zip5": "07071",
+                "Zip4": "1412"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "214 LAKE AVE",
+        "address2": null,
+        "city": "LYNDHURST",
+        "county": null,
+        "state": null,
+        "postalCode": "07071",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 1477,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "POLERA",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f108281285df6d6cd6133"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "BETH DEUCHAN",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "69 HARWOOD AVE",
+                "City": "BERKELEY HTS",
+                "State": "NJ",
+                "Zip5": "07922",
+                "Zip4": "1433"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "69 HARWOOD AVE",
+        "address2": null,
+        "city": "BERKELEY HEIGHTS",
+        "county": null,
+        "state": null,
+        "postalCode": "07922",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 5795,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "BETH",
+        "middle": "",
+        "last": "DEUCHAN",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10aa81285df6d6cd87d8"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "VAILENE FIELDS",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "APT C2",
+                "Address2": "553 NEWARK AVE",
+                "City": "ELIZABETH",
+                "State": "NJ",
+                "Zip5": "07208",
+                "Zip4": "3324"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "553 NEWARK AVE APT C2",
+        "address2": null,
+        "city": "ELIZABETH",
+        "county": null,
+        "state": null,
+        "postalCode": "07208",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 2501,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "VAILENE",
+        "middle": "",
+        "last": "FIELDS",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10d181285df6d6cda940"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "BARBARA BUSWELL",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "APT 11",
+                "Address2": "1320 N WAHSATCH AVE",
+                "City": "COLORADO SPGS",
+                "State": "CO",
+                "Zip5": "80903",
+                "Zip4": "2420"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "1320 N WAHSATCH AVE APT 11",
+        "address2": null,
+        "city": "COLORADO SPRINGS",
+        "county": null,
+        "state": null,
+        "postalCode": "80903",
+        "countryCode": null,
+        "organization": "PEAK PARENT CENTER",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 14424,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "BARBARA",
+        "middle": "",
+        "last": "BUSWELL",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f101d81285df6d6cd0278"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "TRUDY FLETCHER",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "9363 TRIESTE DR",
+                "City": "FORT MYERS",
+                "State": "FL",
+                "Zip5": "33913",
+                "Zip4": "6714"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "9363 TRIESTE DR",
+        "address2": null,
+        "city": "MIROMAR LAKES",
+        "county": null,
+        "state": null,
+        "postalCode": "33913",
+        "countryCode": null,
+        "organization": "PNP ASSOCIATES",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 13878,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "TRUDY",
+        "middle": "",
+        "last": "FLETCHER",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f108881285df6d6cd66f2"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "BOARD PRESIDENT",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "PO BOX 465",
+                "City": "HACKETTSTOWN",
+                "State": "NJ",
+                "Zip5": "07840",
+                "Zip4": "0465"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "PO BOX 465",
+        "address2": null,
+        "city": "HACKETTSTOWN",
+        "county": null,
+        "state": null,
+        "postalCode": "07840",
+        "countryCode": null,
+        "organization": "HACKETTSTOWN SCH DIST",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 5309,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "BOARD",
+        "middle": "",
+        "last": "PRESIDENT",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f117f81285df6d6ce4797"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "JERI HARMON",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "339 BOYDEN AVE",
+                "City": "MAPLEWOOD",
+                "State": "NJ",
+                "Zip5": "07040",
+                "Zip4": "3011"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "339 BOYDEN AVE",
+        "address2": null,
+        "city": "MAPLEWOOD",
+        "county": null,
+        "state": null,
+        "postalCode": "07040",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 912,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "JERI",
+        "middle": "",
+        "last": "HARMON",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10f281285df6d6cdc7f9"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "KATHY ROBERSON",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "750 DRAKE AVE",
+                "City": "MIDDLESEX",
+                "State": "NJ",
+                "Zip5": "08846",
+                "Zip4": "2142"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "750 DRAKE AVE",
+        "address2": null,
+        "city": "MIDDLESEX",
+        "county": null,
+        "state": null,
+        "postalCode": "08846",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 11802,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "KATHY",
+        "middle": "",
+        "last": "ROBERSON",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f112381285df6d6cdf4d5"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "HELEN ESTRACA",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "76 WEST AVE",
+                "City": "WOODSTOWN",
+                "State": "NJ",
+                "Zip5": "08098",
+                "Zip4": "1106"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "76 WEST AVE",
+        "address2": null,
+        "city": "WOODSTOWN",
+        "county": null,
+        "state": null,
+        "postalCode": "08098",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 7974,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "HELEN",
+        "middle": "",
+        "last": "ESTRACA",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f105b81285df6d6cd3d79"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "SCOTT SWEIGERT",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "3592 MAIN RD",
+                "City": "FRANKLINVILLE",
+                "State": "NJ",
+                "Zip5": "08322",
+                "Zip4": "2228"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "3592 MAIN RD",
+        "address2": null,
+        "city": "FRANKLINVILLE",
+        "county": null,
+        "state": null,
+        "postalCode": "08322",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 8847,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "SCOTT",
+        "middle": "",
+        "last": "SWEIGERT",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f113081285df6d6cdff91"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "NANCY MEYER",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "14 CHAMPLAIN RD",
+                "City": "EVESHAM",
+                "State": "NJ",
+                "Zip5": "08053",
+                "Zip4": "1129"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "14 CHAMPLAIN RD",
+        "address2": null,
+        "city": "EVESHAM",
+        "county": null,
+        "state": null,
+        "postalCode": "08053",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 7058,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "NANCY",
+        "middle": "",
+        "last": "MEYER",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f113581285df6d6ce0373"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [
+      "BNH"
+    ],
+    "honorificSuffix": [],
+    "fullName": "VICKI SCHRUER",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "1981 OLD CUTHBERT RD",
+                "City": "CHERRY HILL",
+                "State": "NJ",
+                "Zip5": "08034",
+                "Zip4": "1417"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "1981 OLD CUTHBERT RD",
+        "address2": null,
+        "city": "CHERRY HILL",
+        "county": null,
+        "state": null,
+        "postalCode": "08034",
+        "countryCode": null,
+        "organization": "JACOB SCHAEFER CTR",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 6727,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "BNH",
+        "first": "VICKI",
+        "middle": "",
+        "last": "SCHRUER",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10eb81285df6d6cdc23e"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "LISA EGAN",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "823 UPPER MAIN ST",
+                "City": "LAURENCE HBR",
+                "State": "NJ",
+                "Zip5": "08879",
+                "Zip4": "1418"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "823 UPPER MAIN ST",
+        "address2": null,
+        "city": "LAURENCE HARBOR",
+        "county": null,
+        "state": null,
+        "postalCode": "08879",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 12294,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "LISA",
+        "middle": "",
+        "last": "EGAN",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10ea81285df6d6cdc20d"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "TERRIE MALOPOLSKI",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "4 ANDREW CT",
+                "City": "LAURENCE HBR",
+                "State": "NJ",
+                "Zip5": "08879",
+                "Zip4": "2282"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "4 ANDREW CT",
+        "address2": null,
+        "city": "LAURENCE HARBOR",
+        "county": null,
+        "state": null,
+        "postalCode": "08879",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 12306,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "TERRIE",
+        "middle": "",
+        "last": "MALOPOLSKI",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f125781285df6d6cea1d3"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "ctmweddings@yahoo.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "ctmweddings@yahoo.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "ctmweddings",
+            "domain": "yahoo.com",
+            "domain_age_days": "10151",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mta6.am0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:34:39.455"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2930,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f128181285df6d6ceb6c8"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "solsen@mercercounty.org",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "solsen@mercercounty.org",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "solsen",
+            "domain": "mercercounty.org",
+            "domain_age_days": "8770",
+            "smtp_provider": "proofpoint",
+            "mx_found": "true",
+            "mx_record": "mxa-003b1401.gslb.pphosted.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:38:34.646"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 1097,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f120081285df6d6ce7e0a"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "61017324",
+        "sourceFilename": "SupportCoordinators Oct2020.csv",
+        "recordIndex": 97,
+        "origin": "2020-10-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f123881285df6d6ce9402"
+    },
+    "familyName": "Siegel",
+    "givenName": "Wendy",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "wendylynnsiegel@yahoo.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "wendylynnsiegel@yahoo.com",
+            "status": "abuse",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "wendylynnsiegel",
+            "domain": "yahoo.com",
+            "domain_age_days": "10151",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mta6.am0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:31:52.009"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 4149,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Wendy",
+        "middle": "",
+        "last": "Siegel",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f127681285df6d6ceb193"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "dmilanowycz@aol.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "dmilanowycz@aol.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "dmilanowycz",
+            "domain": "aol.com",
+            "domain_age_days": "9996",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mx-aol.mail.gm0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:37:33.255"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 1563,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f125481285df6d6cea081"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "edcainc@aol.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "edcainc@aol.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "edcainc",
+            "domain": "aol.com",
+            "domain_age_days": "9996",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mx-aol.mail.gm0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:34:24.090"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 3048,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f100e81285df6d6ccf66a"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "590 N 7TH ST",
+                "City": "NEWARK",
+                "State": "NJ",
+                "Zip5": "07107",
+                "Zip4": "4553"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "590 North 7th St",
+        "address2": null,
+        "city": "Newark",
+        "county": null,
+        "state": null,
+        "postalCode": "72522",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "dmurphy@ccannj.org",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "dmurphy@ccannj.org",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "dmurphy",
+            "domain": "ccannj.org",
+            "domain_age_days": "5434",
+            "smtp_provider": "barracuda",
+            "mx_found": "true",
+            "mx_record": "d230297a.ess.barracudanetworks.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:16:39.726"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "25395745",
+        "sourceFilename": "Grant.Agency.List.SRide.csv",
+        "recordIndex": 105,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f120481285df6d6ce7fdf"
+    },
+    "familyName": "Muhammad",
+    "givenName": "Safiyyah",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "Safiyyah.Muhammad@live.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "safiyyah.muhammad@live.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "safiyyah.muhammad",
+            "domain": "live.com",
+            "domain_age_days": "10172",
+            "smtp_provider": "microsoft",
+            "mx_found": "true",
+            "mx_record": "live-com.olc.protection.outlook.com",
+            "firstname": "muhammad",
+            "lastname": "safiyyah",
+            "gender": "male",
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:29:18.125"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "50357708",
+        "sourceFilename": "RFSPC Statewide Meeting-2019.xlsx",
+        "recordIndex": 324,
+        "origin": "2019-12-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Safiyyah",
+        "middle": "",
+        "last": "Muhammad",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f126781285df6d6ceaa8c"
+    },
+    "familyName": "Reyes",
+    "givenName": "Nelia",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Address Not Found.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219401",
+                  "Source": "clsAMS",
+                  "Description": "Address Not Found.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "Somerset",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": "USA",
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "nelia596@yahoo.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "nelia596@yahoo.com",
+            "status": "invalid",
+            "sub_status": "mailbox_not_found",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "nelia596",
+            "domain": "yahoo.com",
+            "domain_age_days": "10151",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mta5.am0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:36:09.611"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2168,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Nelia",
+        "middle": "",
+        "last": "Reyes",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f128881285df6d6ceb97c"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "mtaher@prodigy.net",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "mtaher@prodigy.net",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "mtaher",
+            "domain": "prodigy.net",
+            "domain_age_days": "9917",
+            "smtp_provider": "att",
+            "mx_found": "true",
+            "mx_record": "ff-ip4-mx-vip2.prodigy.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:39:05.793"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 858,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f125b81285df6d6cea3e6"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "behjat63@hotmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "behjat63@hotmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "behjat63",
+            "domain": "hotmail.com",
+            "domain_age_days": "9717",
+            "smtp_provider": "microsoft",
+            "mx_found": "true",
+            "mx_record": "hotmail-com.olc.protection.outlook.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:35:04.549"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2748,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f124881285df6d6ce9b28"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "lucyvenetsky@gmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "lucyvenetsky@gmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "lucyvenetsky",
+            "domain": "gmail.com",
+            "domain_age_days": "9944",
+            "smtp_provider": "google",
+            "mx_found": "true",
+            "mx_record": "gmail-smtp-in.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:33:20.346"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 3522,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f11a481285df6d6ce5dce"
+    },
+    "familyName": "Wells",
+    "givenName": "Sharon",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "sharonanitawells@gmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "sharonanitawells@gmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "sharonanitawells",
+            "domain": "gmail.com",
+            "domain_age_days": "9944",
+            "smtp_provider": "google",
+            "mx_found": "true",
+            "mx_record": "gmail-smtp-in.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:26:49.146"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "00774835",
+        "sourceFilename": "vertical-response-2022-06-16.csv",
+        "recordIndex": 1981,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Sharon",
+        "middle": "",
+        "last": "Wells",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f122481285df6d6ce8c00"
+    },
+    "familyName": "Rigatti",
+    "givenName": "Janet",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "janetrigatti@embarqmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "janetrigatti@embarqmail.com",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "janetrigatti",
+            "domain": "embarqmail.com",
+            "domain_age_days": "6035",
+            "smtp_provider": "centurylink",
+            "mx_found": "true",
+            "mx_record": "mx.centurylink.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:30:35.650"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "43437496",
+        "sourceFilename": "Family_Support_Council__5 2018.csv",
+        "recordIndex": 148,
+        "origin": "2018-05-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Janet",
+        "middle": "",
+        "last": "Rigatti",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f121b81285df6d6ce8935"
+    },
+    "familyName": "Stern",
+    "givenName": "Yvonne",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "ystern@co.ocean.nj.us",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "ystern@co.ocean.nj.us",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "ystern",
+            "domain": "co.ocean.nj.us",
+            "domain_age_days": "7210",
+            "smtp_provider": "mimecast",
+            "mx_found": "true",
+            "mx_record": "usb-smtp-inbound-2.mimecast.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:30:24.966"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "72136093",
+        "sourceFilename": "A_Quick_Guide_for_Families_Hardcopy_Request 2018.csv",
+        "recordIndex": 239,
+        "origin": "2018-12-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Yvonne",
+        "middle": "",
+        "last": "Stern",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f11a681285df6d6ce5e94"
+    },
+    "familyName": "Parral",
+    "givenName": "Marya",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "maryaparral@msn.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "maryaparral@msn.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "maryaparral",
+            "domain": "msn.com",
+            "domain_age_days": "10220",
+            "smtp_provider": "microsoft",
+            "mx_found": "true",
+            "mx_record": "msn-com.olc.protection.outlook.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:26:58.442"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "00774835",
+        "sourceFilename": "vertical-response-2022-06-16.csv",
+        "recordIndex": 1910,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Marya",
+        "middle": "",
+        "last": "Parral",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10cc81285df6d6cda593"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "12 CHERRY LN",
+                "City": "WEST DEPTFORD",
+                "State": "NJ",
+                "Zip5": "08096",
+                "Zip4": "6311"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "12 Cherry Lane",
+        "address2": null,
+        "city": "West Deptford",
+        "county": null,
+        "state": null,
+        "postalCode": "08096",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "sueperd@verizon.net",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "sueperd@verizon.net",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "sueperd",
+            "domain": "verizon.net",
+            "domain_age_days": "8520",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mx-aol.mail.gm0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:21:08.857"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "18330002",
+        "sourceFilename": "Quick-guide.2017-18.csv",
+        "recordIndex": 135,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f122281285df6d6ce8b6f"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "michael.popow@gmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "michael.popow@gmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "michaelpopow",
+            "domain": "gmail.com",
+            "domain_age_days": "9944",
+            "smtp_provider": "google",
+            "mx_found": "true",
+            "mx_record": "gmail-smtp-in.l.google.com",
+            "firstname": "michael",
+            "lastname": "popow",
+            "gender": "male",
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:30:32.100"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "43437496",
+        "sourceFilename": "Family_Support_Council__5 2018.csv",
+        "recordIndex": 244,
+        "origin": "2018-05-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f120981285df6d6ce8183"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "newcarehp@gmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "newcarehp@gmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "newcarehp",
+            "domain": "gmail.com",
+            "domain_age_days": "9944",
+            "smtp_provider": "google",
+            "mx_found": "true",
+            "mx_record": "gmail-smtp-in.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:29:30.806"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "22954286",
+        "sourceFilename": "Support_Coordinators_2019.csv",
+        "recordIndex": 127,
+        "origin": "2019-12-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f125981285df6d6cea2d8"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "ccfeeney@phila.k12.pa.us",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "ccfeeney@phila.k12.pa.us",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "ccfeeney",
+            "domain": "phila.k12.pa.us",
+            "domain_age_days": null,
+            "smtp_provider": "g-suite",
+            "mx_found": "true",
+            "mx_record": "aspmx.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:34:52.250"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2843,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f126881285df6d6ceab0c"
+    },
+    "familyName": "Bui",
+    "givenName": "Michelle",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Invalid Zip Code.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219399",
+                  "Source": "clsAMS",
+                  "Description": "Invalid Zip Code.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "Fairfax",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": "USA",
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "michellebuit@gmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "michellebuit@gmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "michellebuit",
+            "domain": "gmail.com",
+            "domain_age_days": "9944",
+            "smtp_provider": "google",
+            "mx_found": "true",
+            "mx_record": "gmail-smtp-in.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:36:14.648"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2129,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Michelle",
+        "middle": "",
+        "last": "Bui",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f128b81285df6d6cebb2c"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "mayor@closterboro.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "mayor@closterboro.com",
+            "status": "do_not_mail",
+            "sub_status": "role_based",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "mayor",
+            "domain": "closterboro.com",
+            "domain_age_days": "8660",
+            "smtp_provider": "g-suite",
+            "mx_found": "true",
+            "mx_record": "aspmx.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:39:48.089"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 712,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f123881285df6d6ce93d8"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "wwt_ski@earthlink.net",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "wwt_ski@earthlink.net",
+            "status": "invalid",
+            "sub_status": "mailbox_not_found",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "wwt_ski",
+            "domain": "earthlink.net",
+            "domain_age_days": "10377",
+            "smtp_provider": "",
+            "mx_found": "true",
+            "mx_record": "mx03.oxsus-vadesecure.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:31:50.027"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 4164,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f125781285df6d6cea1e2"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "cshepherd@achoe.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "cshepherd@achoe.com",
+            "status": "unknown",
+            "sub_status": "antispam_system",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "cshepherd",
+            "domain": "achoe.com",
+            "domain_age_days": null,
+            "smtp_provider": "",
+            "mx_found": "true",
+            "mx_record": "eforward5.registrar-servers.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:34:40.410"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2924,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f118d81285df6d6ce538b"
+    },
+    "familyName": "Shah",
+    "givenName": "Ragini",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": "Ragini3000@gmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "ragini3000@gmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "ragini3000",
+            "domain": "gmail.com",
+            "domain_age_days": "9944",
+            "smtp_provider": "google",
+            "mx_found": "true",
+            "mx_record": "gmail-smtp-in.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:25:34.582"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "11771669",
+        "sourceFilename": "NJLegislative Caucus-Attendee Report.csv",
+        "recordIndex": 163,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Ragini",
+        "middle": "",
+        "last": "Shah",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f120181285df6d6ce7f2c"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "61017324",
+        "sourceFilename": "SupportCoordinators Oct2020.csv",
+        "recordIndex": 3,
+        "origin": "2020-10-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f106681285df6d6cd4822"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "JACKIE MEANS",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "404 TATUM ST",
+                "City": "WOODBURY",
+                "State": "NJ",
+                "Zip5": "08096",
+                "Zip4": "3499"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "404 TATUM ST",
+        "address2": null,
+        "city": "WOODBURY",
+        "county": null,
+        "state": null,
+        "postalCode": "08096",
+        "countryCode": null,
+        "organization": "CHADD OF WOODBURY",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 7932,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "JACKIE",
+        "middle": "",
+        "last": "MEANS",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f113681285df6d6ce04a6"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "JEANNE PALUMBO",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "APT A3",
+                "Address2": "430 W BROWNING RD",
+                "City": "BELLMAWR",
+                "State": "NJ",
+                "Zip5": "08031",
+                "Zip4": "1914"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "430 W BROWNING RD APT A3",
+        "address2": null,
+        "city": "BELLMAWR",
+        "county": null,
+        "state": null,
+        "postalCode": "08031",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 6624,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "JEANNE",
+        "middle": "",
+        "last": "PALUMBO",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f116781285df6d6ce3354"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "LIM FELICIANO",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "22 COLLEGE ST",
+                "City": "JERSEY CITY",
+                "State": "NJ",
+                "Zip5": "07305",
+                "Zip4": "1520"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "22 COLLEGE ST",
+        "address2": null,
+        "city": "JERSEY CITY",
+        "county": null,
+        "state": null,
+        "postalCode": "07305",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 2641,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "LIM",
+        "middle": "",
+        "last": "FELICIANO",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f111f81285df6d6cdf0a0"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "MEGHAN BRIDGEMAN",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "217 1ST AVE",
+                "City": "CAPE MAY CH",
+                "State": "NJ",
+                "Zip5": "08210",
+                "Zip4": "2836"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "217 1ST AVE",
+        "address2": null,
+        "city": "CAPE MAY COURT HOUSE",
+        "county": null,
+        "state": null,
+        "postalCode": "08210",
+        "countryCode": null,
+        "organization": "UNIV. OF THE SCIENCES",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 8335,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "MEGHAN",
+        "middle": "",
+        "last": "BRIDGEMAN",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f11a081285df6d6ce5bd1"
+    },
+    "familyName": "Wimberly",
+    "givenName": "The Honorable Benjie",
+    "additionalName": "E.",
+    "honorificPrefix": [
+      "The Honorable"
+    ],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": "Male",
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Address Not Found.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219401",
+                  "Source": "clsAMS",
+                  "Description": "Address Not Found.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "Trenton",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": "USA",
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [
+      {
+        "number": "9739257061",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "work",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      },
+      {
+        "number": "2013986383",
+        "numberExtension": null,
+        "phoneType": "mobile",
+        "use": null,
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "asmwimberly@njleg.org",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "asmwimberly@njleg.org",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "asmwimberly",
+            "domain": "njleg.org",
+            "domain_age_days": "7839",
+            "smtp_provider": "microsoft",
+            "mx_found": "true",
+            "mx_record": "njleg-org.mail.protection.outlook.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:26:37.145"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "00774835",
+        "sourceFilename": "vertical-response-2022-06-16.csv",
+        "recordIndex": 2338,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "The Honorable",
+        "first": "Benjie",
+        "middle": "E.",
+        "last": "Wimberly",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f126081285df6d6cea727"
+    },
+    "familyName": "Raynor",
+    "givenName": "Scott",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Address Not Found.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219401",
+                  "Source": "clsAMS",
+                  "Description": "Address Not Found.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "GLASSBORO",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [
+      {
+        "number": "8564884499134",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "work",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      },
+      {
+        "number": "6098207829",
+        "numberExtension": null,
+        "phoneType": "mobile",
+        "use": null,
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "stc3006@yahoo.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "stc3006@yahoo.com",
+            "status": "invalid",
+            "sub_status": "mailbox_not_found",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "stc3006",
+            "domain": "yahoo.com",
+            "domain_age_days": "10151",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mta7.am0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:35:26.552"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2462,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Scott",
+        "middle": "",
+        "last": "Raynor",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f126181285df6d6cea7b6"
+    },
+    "familyName": "Hunt",
+    "givenName": "Andrew",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Address Not Found.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219401",
+                  "Source": "clsAMS",
+                  "Description": "Address Not Found.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "TABERNACLE",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [
+      {
+        "number": "8569108326",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "work",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      },
+      {
+        "number": "6096542920",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "home",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "aj1173@gmail.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "aj1173@gmail.com",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "aj1173",
+            "domain": "gmail.com",
+            "domain_age_days": "9944",
+            "smtp_provider": "google",
+            "mx_found": "true",
+            "mx_record": "gmail-smtp-in.l.google.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:35:33.380"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2413,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Andrew",
+        "middle": "",
+        "last": "Hunt",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f126081285df6d6cea72b"
+    },
+    "familyName": "Ferris",
+    "givenName": "Kathy Whelan",
+    "additionalName": null,
+    "honorificPrefix": [
+      "Advocate"
+    ],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Address Not Found.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219401",
+                  "Source": "clsAMS",
+                  "Description": "Address Not Found.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "MAPLE SHADE",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [
+      {
+        "number": "8562352282",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "home",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "spiritofthelamb@yahoo.com",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "spiritofthelamb@yahoo.com",
+            "status": "abuse",
+            "sub_status": "",
+            "free_email": true,
+            "did_you_mean": null,
+            "account": "spiritofthelamb",
+            "domain": "yahoo.com",
+            "domain_age_days": "10151",
+            "smtp_provider": "yahoo",
+            "mx_found": "true",
+            "mx_record": "mta5.am0.yahoodns.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:35:26.539"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 2461,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "Advocate",
+        "first": "Kathy",
+        "middle": "Whelan",
+        "last": "Ferris",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f128281285df6d6ceb6d8"
+    },
+    "familyName": "Josephson",
+    "givenName": "Sanford",
+    "additionalName": null,
+    "honorificPrefix": [
+      "Public Relations"
+    ],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [
+      {
+        "number": "9082340011273",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "work",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "sjosephson@matheny.org",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "sjosephson@matheny.org",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "sjosephson",
+            "domain": "matheny.org",
+            "domain_age_days": "8974",
+            "smtp_provider": "",
+            "mx_found": "true",
+            "mx_record": "matheny-org.mces.networkboxusa.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:38:35.850"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 1089,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "Public Relations",
+        "first": "Sanford",
+        "middle": "",
+        "last": "Josephson",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f127481285df6d6ceb09a"
+    },
+    "familyName": "Brelvi",
+    "givenName": "?Sarah",
+    "additionalName": null,
+    "honorificPrefix": [
+      "CPO"
+    ],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Invalid Zip Code.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219399",
+                  "Source": "clsAMS",
+                  "Description": "Invalid Zip Code.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "WASHINGTON",
+        "county": null,
+        "state": "WA",
+        "postalCode": "00000",
+        "countryCode": null,
+        "organization": "United Way of Warren County",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [
+      {
+        "number": "9088353550",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "work",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "sarah.brelvi@unitedwaynnj.org",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "sarah.brelvi@unitedwaynnj.org",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "sarah.brelvi",
+            "domain": "unitedwaynnj.org",
+            "domain_age_days": "4480",
+            "smtp_provider": "microsoft",
+            "mx_found": "true",
+            "mx_record": "unitedwaynnj-org.mail.protection.outlook.com",
+            "firstname": "sarah",
+            "lastname": "brelvi",
+            "gender": "female",
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:37:23.409"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 1651,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "CPO",
+        "first": "?Sarah",
+        "middle": "",
+        "last": "Brelvi",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f122781285df6d6ce8d02"
+    },
+    "familyName": "BROWN",
+    "givenName": "RACHELLE",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [
+      {
+        "number": "9734203911",
+        "numberExtension": null,
+        "phoneType": "mobile",
+        "use": null,
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "rocky645@optimum.net",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "rocky645@optimum.net",
+            "status": "invalid",
+            "sub_status": "mailbox_not_found",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "rocky645",
+            "domain": "optimum.net",
+            "domain_age_days": "10363",
+            "smtp_provider": "",
+            "mx_found": "true",
+            "mx_record": "mx.mx-altice.prod.cloud.synchronoss.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:30:40.021"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "45165473",
+        "sourceFilename": "Family_Support_Council_3  2018.csv",
+        "recordIndex": 190,
+        "origin": "2018-03-31",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "RACHELLE",
+        "middle": "",
+        "last": "BROWN",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f127581285df6d6ceb0a4"
+    },
+    "familyName": "Pollakof",
+    "givenName": "Stan",
+    "additionalName": null,
+    "honorificPrefix": [
+      "SLCS Director"
+    ],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Address Not Found.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219401",
+                  "Source": "clsAMS",
+                  "Description": "Address Not Found.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "NEWTON",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": null,
+        "organization": "Sussex County Library System",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [
+      {
+        "number": "9739483660",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "work",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "pollakoff@sussexcountylibrary.org",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "pollakoff@sussexcountylibrary.org",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "pollakoff",
+            "domain": "sussexcountylibrary.org",
+            "domain_age_days": "7145",
+            "smtp_provider": "",
+            "mx_found": "true",
+            "mx_record": "njstatelib-mx.email-protect.gosecure.net",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:37:23.063"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "59304687",
+        "sourceFilename": "VerticalReponse_Master_List-March26-2018.csv",
+        "recordIndex": 1645,
+        "origin": "2018-03-26",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "SLCS Director",
+        "first": "Stan",
+        "middle": "",
+        "last": "Pollakof",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f11a081285df6d6ce5bdb"
+    },
+    "familyName": "Verrelli",
+    "givenName": "The Honorable Anthony S.",
+    "additionalName": "S.",
+    "honorificPrefix": [
+      "The Honorable"
+    ],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": "Female",
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "invalid",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": "Address Not Found.",
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Error": {
+                  "Number": "-2147219401",
+                  "Source": "clsAMS",
+                  "Description": "Address Not Found.",
+                  "HelpFile": null,
+                  "HelpContext": null
+                }
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": null,
+        "address2": null,
+        "city": "Trenton",
+        "county": null,
+        "state": null,
+        "postalCode": "00000",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [
+      {
+        "number": "6095719638",
+        "numberExtension": null,
+        "phoneType": null,
+        "use": "work",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "asmverrelli@njleg.org",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "asmverrelli@njleg.org",
+            "status": "valid",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "asmverrelli",
+            "domain": "njleg.org",
+            "domain_age_days": "7839",
+            "smtp_provider": "microsoft",
+            "mx_found": "true",
+            "mx_record": "njleg-org.mail.protection.outlook.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:26:37.688"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "00774835",
+        "sourceFilename": "vertical-response-2022-06-16.csv",
+        "recordIndex": 2335,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "The Honorable",
+        "first": "Anthony",
+        "middle": "S. S.",
+        "last": "Verrelli",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f11b881285df6d6ce6570"
+    },
+    "familyName": "Miller",
+    "givenName": "Richard",
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": null,
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [],
+    "telephones": [
+      {
+        "number": "9732437916",
+        "numberExtension": null,
+        "phoneType": "mobile",
+        "use": null,
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "emails": [
+      {
+        "address": "rmiller@lawfirm.ms",
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "verified",
+          "authority": "ZeroBounce",
+          "date": "2022-11-02",
+          "reason": null,
+          "content": {
+            "address": "rmiller@lawfirm.ms",
+            "status": "catch-all",
+            "sub_status": "",
+            "free_email": false,
+            "did_you_mean": null,
+            "account": "rmiller",
+            "domain": "lawfirm.ms",
+            "domain_age_days": "2910",
+            "smtp_provider": "",
+            "mx_found": "true",
+            "mx_record": "lawfirm-ms.mx1.arsmtp.com",
+            "firstname": null,
+            "lastname": null,
+            "gender": null,
+            "country": null,
+            "region": null,
+            "city": null,
+            "zipcode": null,
+            "processed_at": "2022-11-02 19:28:02.478"
+          }
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "00774835",
+        "sourceFilename": "vertical-response-2022-06-16.csv",
+        "recordIndex": 1018,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "Richard",
+        "middle": "",
+        "last": "Miller",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10e981285df6d6cdc058"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "JENNIFER LYNCH",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "985 LIVINGSTON AVE",
+                "City": "N BRUNSWICK",
+                "State": "NJ",
+                "Zip5": "08902",
+                "Zip4": "1843"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "985 LIVINGSTON AVE",
+        "address2": null,
+        "city": "NORTH BRUNSWICK",
+        "county": null,
+        "state": null,
+        "postalCode": "08902",
+        "countryCode": null,
+        "organization": "THE ARC OF NEW JERSEY",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 12453,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "JENNIFER",
+        "middle": "",
+        "last": "LYNCH",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f10f281285df6d6cdc81b"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "NATALIA MANNING",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "3 DOWNBURY CT",
+                "City": "HILLSBOROUGH",
+                "State": "NJ",
+                "Zip5": "08844",
+                "Zip4": "8101"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "3 DOWNBURY CT",
+        "address2": null,
+        "city": "HILLSBOROUGH",
+        "county": null,
+        "state": null,
+        "postalCode": "08844",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 11789,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "NATALIA",
+        "middle": "",
+        "last": "MANNING",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f103381285df6d6cd17bb"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "BEN ABATE",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "350 MARSHALL ST",
+                "City": "ALPHA",
+                "State": "NJ",
+                "Zip5": "08865",
+                "Zip4": "3273"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "350 MARSHALL ST",
+        "address2": null,
+        "city": "ALPHA",
+        "county": null,
+        "state": null,
+        "postalCode": "08865",
+        "countryCode": null,
+        "organization": "NORWESCAP",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 12063,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "BEN",
+        "middle": "",
+        "last": "ABATE",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f116981285df6d6ce34d5"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "CHILD STUDY TEAM",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "158 ERIE ST",
+                "City": "JERSEY CITY",
+                "State": "NJ",
+                "Zip5": "07302",
+                "Zip4": "1718"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "158 ERIE ST",
+        "address2": null,
+        "city": "JERSEY CITY",
+        "county": null,
+        "state": null,
+        "postalCode": "07302",
+        "countryCode": null,
+        "organization": "PUBLIC SCHOOL # 37",
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "15600484",
+        "sourceFilename": "2022 Vol 2 Mailing List.csv",
+        "recordIndex": 2512,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "CHILD",
+        "middle": "STUDY",
+        "last": "TEAM",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  },
+  {
+    "_id": {
+      "$oid": "635f106181285df6d6cd43a3"
+    },
+    "familyName": null,
+    "givenName": null,
+    "additionalName": null,
+    "honorificPrefix": [],
+    "honorificSuffix": [],
+    "fullName": "DANIEL BEYEL",
+    "birthDate": null,
+    "maritalStatus": null,
+    "gender": null,
+    "pronouns": [],
+    "languages": [],
+    "role": null,
+    "addresses": [
+      {
+        "verified": {
+          "status": "verified",
+          "authority": "USPS",
+          "date": "2022-10-31",
+          "reason": null,
+          "usps": {
+            "AddressValidateResponse": {
+              "Address": {
+                "@ID": "0",
+                "Address1": "-",
+                "Address2": "4 MOORE RD",
+                "City": "CAPE MAY CH",
+                "State": "NJ",
+                "Zip5": "08210",
+                "Zip4": "1654"
+              }
+            }
+          }
+        },
+        "addressType": "primary",
+        "address": "4 MOORE RD",
+        "address2": null,
+        "city": "CAPE MAY COURT HOUSE",
+        "county": null,
+        "state": null,
+        "postalCode": "08210",
+        "countryCode": null,
+        "organization": null,
+        "title": null,
+        "legislative": {
+          "districts": []
+        }
+      }
+    ],
+    "telephones": [],
+    "emails": [
+      {
+        "address": null,
+        "use": "unknown",
+        "notes": null,
+        "permissions": [],
+        "verified": {
+          "status": "unverified",
+          "authority": null,
+          "date": null,
+          "reason": null
+        }
+      }
+    ],
+    "subscriptions": [],
+    "interests": [],
+    "socialMedia": [],
+    "aces": {
+      "provenance": {
+        "uploadID": "21289547",
+        "sourceFilename": "2022 Vol 2 Mailing List.xlsx",
+        "recordIndex": 8317,
+        "origin": "2022-01-01",
+        "domain": "NJCDD",
+        "model": "person"
+      },
+      "humanName": {
+        "title": "",
+        "first": "DANIEL",
+        "middle": "",
+        "last": "BEYEL",
+        "suffix": "",
+        "nickname": ""
+      }
+    }
+  }
+]
