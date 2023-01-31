@@ -1,6 +1,5 @@
 {
   "api": {
-    "port": 12100,
     "data": {
       "source": "./data/source"
     }

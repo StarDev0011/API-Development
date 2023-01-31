@@ -1,4 +1,7 @@
-// src/app.ts
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
 import express, { json, NextFunction, Request as ExRequest, Response as ExResponse, urlencoded } from 'express'
 import swaggerUi from 'swagger-ui-express'
 import { ValidateError } from 'tsoa'
