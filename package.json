@@ -10,9 +10,12 @@
     "test": "jest --config package.json",
     "dev": "nodemon ./src/server.ts",
     "build": "yarn clean && tsoa spec-and-routes && tsc",
+    "build-patch": "yarn build && yarn version --patch",
+    "build-minor": "yarn build && yarn version --minor",
+    "build-major": "yarn build && yarn version --major",
     "start": "node build/src/server.js",
     "preversion": "yarn test",
-    "postversion": "git push --tags && git push && echo \"Successfully released version $npm_package_version!\""
+    "postversion": "git push --tags && git push && docker build . --no-cache --pull --progress plain --tag anthonysw/njcdd-account-api:$npm_package_version --tag anthonysw/njcdd-account-api:latest && echo \"Successfully released version $npm_package_version!\""
   },
   "dependencies": {
     "config": "^3.3.9",
@@ -42,7 +45,7 @@
     "typescript": "^4.9.4"
   },
   "jest": {
-    "bail": 1,
+    "bail": true,
     "moduleFileExtensions": [
       "ts",
       "tsx",

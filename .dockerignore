@@ -1,8 +1,10 @@
 .git
 .idea
 node_modules
+mongodb
 .DS_Store
 .dockerignore
 .gitignore
 docker-compose.*
 Dockerfile
+live-tests.sh
