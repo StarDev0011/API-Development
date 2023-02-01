@@ -20,12 +20,18 @@ The Developer workstation must support the following tools:
     * see https://traefik.io/blog/traefik-2-tls-101-23b4fbee81f1/
     * Create a self-signed wildcard certificate for the domain dev.test
 
-## Getting Started with source code
+## Getting Started and using source code
 
-Setup: `yarn install`
+| Purpose               | Command to Run        | Comments                                         |
+|-----------------------|-----------------------|--------------------------------------------------|
+| Dev Setup             | `yarn install`        |                                                  |
+| Build from Typescript | `yarn build`          |                                                  |
+| Increment Version     | `yarn build-patch`    | Mandatory to Git Commit before Increment         |
+|                       | `yarn build-minor`    | All increments will apply Git Tag                |
+|                       | `yarn build-major`    |                                                  |
+| Run Test Cases        | `yarn test`           | Runs all unit-test cases                         |
+| Run Local Service     | `yarn start`          | Run this service locally for Dev purposes        |
+| Docker Build          | `yarn docker-release` | Increment version before Docker build for deploy |
+| Docker Deploy         | `yarn docker-deploy`  | Run deploy after you're sure of your build       |
 
-Build: `yarn build`
-
-Test:  `yarn test`
-
-Run:   `yarn start`
+Do not increment version before every build. Only increment when preparing to deploy.
