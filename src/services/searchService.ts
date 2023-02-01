@@ -3,7 +3,6 @@
  */
 
 import {
-  Dictionary,
   filter,
   find,
   get,
@@ -20,14 +19,16 @@ import {
 } from 'lodash'
 import { Content, FieldAttributes, QueryCatalog, QueryItem, Search, SearchCatalog } from '../models/search'
 
+export { QueryCatalog, QueryItem }
+
 const fieldCatalog = require('../../data/source/search.json') as SearchCatalog
 const queryCatalog = require('../../data/source/query.json') as QueryCatalog
 
 const fieldNames = keys(fieldCatalog) || [] as const
 type FieldName = typeof fieldNames[number]
 
-function contentToObject(contents: Array<Content>): Dictionary<string> {
-  return reduce(contents, (contentObject: Dictionary<string>, content: Content) => {
+function contentToObject(contents: Array<Content>): Record<string, string> {
+  return reduce(contents, (contentObject: Record<string, string>, content: Content) => {
     contentObject[content.key] = content.value
     return contentObject
   }, {})
@@ -65,7 +66,7 @@ async function isValidQuery(query: QueryItem): Promise<void> {
 }
 
 export class SearchService {
-  public async fieldContent(fieldName: FieldName): Promise<Dictionary<string>> {
+  public async fieldContent(fieldName: FieldName): Promise<Record<string, string>> {
     return Promise
       .resolve(fieldName)
       .then((field) => {

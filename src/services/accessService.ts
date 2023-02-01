@@ -1,8 +1,10 @@
-import { Dictionary, filter, first, get, has, isArray, lowerCase, split, toString, values } from 'lodash'
+import { filter, first, get, has, isArray, lowerCase, split, toString, values } from 'lodash'
 import isEmail from 'validator/lib/isEmail'
-import { Access, AccessCredentials, AccessRegister, AccessUser } from '../models/access'
+import { Access, AccessCredentials, AccessRegister, AccessUser, AcknowledgeRequest } from '../models/access'
 
-const accessData: Dictionary<Access> = require('../../data/source/access.json')
+export { Access, AccessCredentials, AccessRegister, AccessUser, AcknowledgeRequest }
+
+const accessData: Record<string, Access> = require('../../data/source/access.json')
 
 export class AccessService {
   public async authenticate(credentials: AccessCredentials): Promise<Access> {

@@ -3,8 +3,7 @@
  */
 
 import { Controller, Get, Route } from 'tsoa'
-import { DashboardItem } from '../models/dashboard'
-import { DashboardService } from '../services/dashboardService'
+import { DashboardItem, DashboardService } from '../services/dashboardService'
 
 const dashboardService = new DashboardService()
 

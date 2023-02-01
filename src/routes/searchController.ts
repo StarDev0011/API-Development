@@ -2,10 +2,9 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Dictionary, isUndefined } from 'lodash'
+import { isUndefined } from 'lodash'
 import { Body, Controller, Get, Path, Post, Query, Route } from 'tsoa'
-import { QueryCatalog, QueryItem } from '../models/search'
-import { SearchService } from '../services/searchService'
+import { QueryCatalog, QueryItem, SearchService } from '../services/searchService'
 
 const searchService = new SearchService()
 
@@ -17,7 +16,7 @@ export class SearchController extends Controller {
    * @returns {Promise<Dictionary<string>>}
    */
   @Get('field/{field}')
-  public async getFieldContent(@Path() field: string): Promise<Dictionary<string>> {
+  public async getFieldContent(@Path() field: string): Promise<Record<string, string>> {
     return Promise
       .resolve(searchService)
       .then((service: SearchService) => {
@@ -36,7 +35,7 @@ export class SearchController extends Controller {
    * @returns {Promise<Dictionary<string>>}
    */
   @Get('attributes')
-  public async getFieldAttributes(@Query() field?: string): Promise<Dictionary<string>> {
+  public async getFieldAttributes(@Query() field?: string): Promise<Record<string, string>> {
     return Promise
       .resolve(searchService)
       .then((service: SearchService) => {
@@ -100,7 +99,7 @@ export class SearchController extends Controller {
    * @returns {Promise<Dictionary<string>>} Query Id
    */
   @Post('query')
-  public async saveQuery(@Body() queryItem: QueryItem): Promise<Dictionary<string>> {
+  public async saveQuery(@Body() queryItem: QueryItem): Promise<Record<string, string>> {
     return Promise
       .resolve(searchService)
       .then((service: SearchService) => {

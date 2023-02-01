@@ -5,6 +5,7 @@
 import { isArray } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
+import DoneCallback = jest.DoneCallback
 
 const suiteURL = '/api/v1/access'
 const acknowledge = {message: 'Request received'}
@@ -17,7 +18,7 @@ describe('AccessController', () => {
     describe('Authenticate', () => {
       const testURL: string = `${suiteURL}/authenticate`
 
-      it(`POST ${testURL}`, done => {
+      it(`POST ${testURL}`, (done: DoneCallback) => {
         request(app)
           .post(testURL)
           .type('json')
@@ -33,7 +34,7 @@ describe('AccessController', () => {
     describe('Register', () => {
       const testURL: string = `${suiteURL}/register`
 
-      it(`POST ${testURL}`, done => {
+      it(`POST ${testURL}`, (done: DoneCallback) => {
         request(app)
           .post(testURL)
           .type('json')
@@ -50,7 +51,7 @@ describe('AccessController', () => {
     describe('Reset', () => {
       const testURL: string = `${suiteURL}/reset`
 
-      it(`POST ${testURL}`, done => {
+      it(`POST ${testURL}`, (done: DoneCallback) => {
         request(app)
           .post(testURL)
           .type('json')
@@ -67,7 +68,7 @@ describe('AccessController', () => {
     describe('Staff', () => {
       const testURL: string = `${suiteURL}/staff`
 
-      it(`GET ${testURL}`, done => {
+      it(`GET ${testURL}`, (done: DoneCallback) => {
         request(app)
           .get(testURL)
           .expect(200)

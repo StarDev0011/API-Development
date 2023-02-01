@@ -2,7 +2,7 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { get, has, isArray, isPlainObject, isUndefined, keys } from 'lodash'
+import { get, has, isArray, isNull, isPlainObject, isUndefined, keys } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
 import DoneCallback = jest.DoneCallback
@@ -64,7 +64,7 @@ describe(`SearchController`, () => {
     [ undefined, 3 ],
     [ null, 3 ]
   ])('Query List', (owner: string | null | undefined, queryCount: number) => {
-    const query: string = isUndefined(owner) ? '' : `?owner=${owner}`
+    const query: string = isUndefined(owner) || isNull(owner) ? '' : `?owner=${owner}`
     const testURL = `${suiteURL}/queries/${query}`
 
     it(`GET ${testURL}`, (done: DoneCallback) => {

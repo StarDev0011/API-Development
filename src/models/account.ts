@@ -20,9 +20,9 @@ type SocialMediaPlatform = string
 type TelephoneType = string
 type VerifiedStatus = string
 
-export type SingleElement = string | number | boolean | Date | null
-export type ListElement = HonorificPrefix | HonorificSuffix | Language | Role | Interest | Email |
-  Telephone | Address | SocialMedia | Subscription
+// export type SingleElement = string | number | boolean | Date | null
+// export type ListElement = HonorificPrefix | HonorificSuffix | Language | Role | Interest | Email |
+//   Telephone | Address | SocialMedia | Subscription
 
 export interface Account {
   _id?: oid
@@ -151,5 +151,5 @@ export interface Verified {
   authority?: string
   date?: Date
   reason?: string
-  content?: Map<string, unknown>
+  content?: Record<string, unknown>
 }

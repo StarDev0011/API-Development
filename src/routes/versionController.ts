@@ -3,8 +3,7 @@
  */
 
 import { Controller, Get, Route } from 'tsoa'
-import { Version } from '../models/version'
-import { VersionService } from '../services/versionService'
+import { Version, VersionService } from '../services/versionService'
 
 
 @Route('version')

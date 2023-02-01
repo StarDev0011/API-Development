@@ -1,6 +1,8 @@
 import * as pkg from '../../package.json'
 import { Version } from '../models/version'
 
+export { Version }
+
 export class VersionService {
   public get(): Version {
     return {
