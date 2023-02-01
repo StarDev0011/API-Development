@@ -3,8 +3,7 @@
  */
 
 import { Controller, Get, Path, Route } from 'tsoa'
-import { Account } from '../models/account'
-import { AccountService } from '../services/accountService'
+import { Account, AccountService } from '../services/accountService'
 
 const accountService = new AccountService()
 

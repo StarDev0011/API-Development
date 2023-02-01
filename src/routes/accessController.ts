@@ -3,8 +3,14 @@
  */
 
 import { Body, Controller, Get, Post, Route } from 'tsoa'
-import { Access, AccessCredentials, AccessRegister, AccessUser, AcknowledgeRequest } from '../models/access'
-import { AccessService } from '../services/accessService'
+import {
+  Access,
+  AccessCredentials,
+  AccessRegister,
+  AccessService,
+  AccessUser,
+  AcknowledgeRequest
+} from '../services/accessService'
 
 @Route('access')
 export class AccessController extends Controller {

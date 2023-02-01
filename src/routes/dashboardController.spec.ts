@@ -5,13 +5,14 @@
 import { isArray } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
+import DoneCallback = jest.DoneCallback
 
 const suiteURL = '/api/v1/dashboard'
 
 describe('DashboardController', () => {
 
   describe('Dashboard', () => {
-    it(`GET ${suiteURL}`, done => {
+    it(`GET ${suiteURL}`, (done: DoneCallback) => {
       request(app)
         .get(suiteURL)
         .expect(200)

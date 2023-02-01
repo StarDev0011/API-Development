@@ -1,5 +1,7 @@
 import { DashboardItem } from '../models/dashboard'
 
+export { DashboardItem }
+
 const dashboardData: Array<DashboardItem> = require('../../data/source/dashboard.json')
 
 export class DashboardService {

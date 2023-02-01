@@ -1,6 +1,8 @@
 import { find, isUndefined } from 'lodash'
 import { Account } from '../models/account'
 
+export { Account }
+
 const accounts: Array<Account> = require('../../data/source/account.json')
 
 async function findAccount(accountId: string): Promise<Account> {
