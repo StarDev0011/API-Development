@@ -1,0 +1,20 @@
+version: '3.9'
+
+# This will be needed if integrated with other ACES components
+# Run `docker network create aces-net` before first launch of this container
+networks:
+  aces-net:
+    external: true
+
+services:
+  njcdd-account-api:
+    image: anthonysw/njcdd-account-api:latest
+    hostname: njcdd-account-api
+    ports:
+      - "${NJCDD_ACCOUNT_API_PORT}:${NJCDD_ACCOUNT_API_PORT}"
+    expose:
+      - "${NJCDD_ACCOUNT_API_PORT}"
+    environment:
+      NJCDD_ACCOUNT_API_PORT: "${NJCDD_ACCOUNT_API_PORT}"
+    networks:
+      - aces-net
