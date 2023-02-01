@@ -14,8 +14,7 @@ COPY package.json tsconfig.json tsoa.json yarn.lock ./
 RUN yarn install --frozen-lockfile --non-interactive --production=false
 
 COPY . .
-RUN yarn build
-RUN yarn test
+RUN yarn build && yarn test
 
 
 ### RUNNER ###
