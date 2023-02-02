@@ -1,5 +1,6 @@
-export interface DashboardItem {
-  name: string
-  value: number
-  icon: string
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
+export interface Dashboard extends Array<Record<string, number>> {
 }

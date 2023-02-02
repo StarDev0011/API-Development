@@ -2,7 +2,7 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { isArray } from 'lodash'
+import { isPlainObject } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
 import DoneCallback = jest.DoneCallback
@@ -17,8 +17,8 @@ describe('DashboardController', () => {
         .get(suiteURL)
         .expect(200)
         .expect('Content-Type', /json/)
-        .expect(response => isArray(response.body))
-        .expect(response => response.body.length > 0)
+        .expect(response => isPlainObject(response.body))
+        .expect(response => response.body.length === 6)
         .then(() => {
           done()
         })

@@ -1,32 +1,8 @@
-[
-  {
-    "name": "contacts",
-    "value": 20000,
-    "icon": "fa-file-user"
-  },
-  {
-    "name": "phones",
-    "value": 7264,
-    "icon": "fa-phone"
-  },
-  {
-    "name": "addresses",
-    "value": 16495,
-    "icon": "fa-mailbox"
-  },
-  {
-    "name": "validAddresses",
-    "value": 12543,
-    "icon": "fa-usps"
-  },
-  {
-    "name": "emails",
-    "value": 19347,
-    "icon": "fa-at"
-  },
-  {
-    "name": "validEmails",
-    "value": 15883,
-    "icon": "fa-envelope-circle-check"
-  }
-]
+{
+  "contacts": 20000,
+  "phones": 7264,
+  "addresses": 16495,
+  "validAddresses": 12543,
+  "emails": 19347,
+  "validEmails": 15883
+}

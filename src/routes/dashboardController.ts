@@ -3,7 +3,7 @@
  */
 
 import { Controller, Get, Route } from 'tsoa'
-import { DashboardItem, DashboardService } from '../services/dashboardService'
+import { Dashboard, DashboardService } from '../services/dashboardService'
 
 const dashboardService = new DashboardService()
 
@@ -11,16 +11,16 @@ const dashboardService = new DashboardService()
 export class DashboardController extends Controller {
   /**
    * Return an array containing dashboard items
-   * @returns {Promise<Array<DashboardItem>>}
+   * @returns {Promise<Dashboard>}
    */
   @Get()
-  public async getDashboard(): Promise<Array<DashboardItem>> {
+  public async getDashboard(): Promise<Dashboard> {
     return Promise
       .resolve(dashboardService)
       .then((service: DashboardService) => {
         return service.items()
       })
-      .then((result: Array<DashboardItem>) => {
+      .then((result: Dashboard) => {
         return result
       })
       .catch((err) => {
