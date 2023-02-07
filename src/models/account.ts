@@ -26,10 +26,6 @@ type VerifiedStatus = string
 // export type ListElement = HonorificPrefix | HonorificSuffix | Language | Role | Interest | Email |
 //   Telephone | Address | SocialMedia | Subscription
 
-export interface TempAccount {
-  id?: ObjectId
-}
-
 export interface Account {
   id?: ObjectId
   familyName: string | null
