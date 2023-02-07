@@ -16,5 +16,6 @@ services:
       - "${NJCDD_ACCOUNT_API_PORT}"
     environment:
       NJCDD_ACCOUNT_API_PORT: "${NJCDD_ACCOUNT_API_PORT}"
+      NJCDD_MONGODB_URI: "${NJCDD_MONGODB_URI}"
     networks:
       - aces-net

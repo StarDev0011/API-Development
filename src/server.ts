@@ -7,6 +7,6 @@ import { app } from './app'
 const port = parseInt(process.env.NJCDD_ACCOUNT_API_PORT || '12100')
 
 app.listen(port, () => {
-    console.log(`NJCDD-API-Mock listening at http://localhost:${port}`)
+    console.log(`NJCDD-Account-API listening at http://localhost:${port}`)
   }
 )

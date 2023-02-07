@@ -15,6 +15,16 @@ const suiteURL: string = '/api/v1/search'
 
 describe(`SearchController`, () => {
 
+  // TODO: Create request(app) here
+  beforeEach(() => {
+
+  })
+
+  // TODO: Tear down request(app) to close database
+  afterEach(() => {
+
+  })
+
   describe.each<TestContentTuple>([
     [ 'Language' ],
     [ 'Role' ],

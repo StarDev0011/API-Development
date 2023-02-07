@@ -23,6 +23,7 @@ FROM builder as runner
 RUN mkdir -p /opt/njcdd/account-api/build
 WORKDIR /opt/njcdd/account-api
 ENV NJCDD_ACCOUNT_API_PORT=12100 \
+    NJCDD_MONGODB_URI="" \
     NODE_ENV=production
 
 COPY package.json tsconfig.json tsoa.json yarn.lock ./

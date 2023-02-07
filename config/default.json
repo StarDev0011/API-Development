@@ -2,6 +2,12 @@
   "api": {
     "data": {
       "source": "./data/source"
+    },
+    "mongodb": {
+      "database": "njcdd",
+      "collections": {
+        "account": "accounts"
+      }
     }
   }
 }

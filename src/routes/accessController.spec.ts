@@ -15,6 +15,16 @@ describe('AccessController', () => {
 
   describe('Access', () => {
 
+    // TODO: Create request(app) here
+    beforeEach(() => {
+
+    })
+
+    // TODO: Tear down request(app) to close database
+    afterEach(() => {
+
+    })
+
     describe('Authenticate', () => {
       const testURL: string = `${suiteURL}/authenticate`
 

@@ -2,6 +2,8 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
+import { ObjectId } from 'mongodb'
+
 type ContactPermission = string
 type CountryCode = string
 type Gender = string
@@ -24,8 +26,12 @@ type VerifiedStatus = string
 // export type ListElement = HonorificPrefix | HonorificSuffix | Language | Role | Interest | Email |
 //   Telephone | Address | SocialMedia | Subscription
 
+export interface TempAccount {
+  id?: ObjectId
+}
+
 export interface Account {
-  _id?: oid
+  id?: ObjectId
   familyName: string | null
   givenName: string | null
   additionalName: string | null
@@ -46,10 +52,6 @@ export interface Account {
   socialMedia: Array<SocialMedia>
   subscriptions: Array<Subscription>
   aces: Aces
-}
-
-export interface oid {
-  '$oid': string
 }
 
 export interface Pronoun {
