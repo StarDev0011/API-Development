@@ -16,7 +16,7 @@ const swaggerOptions = {
   }
 }
 const corsOptions: cors.CorsOptions = {
-  origin: [ '*' ]
+  origin: '*'
 }
 
 // Use body parser to read sent json payloads
