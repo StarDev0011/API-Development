@@ -15,16 +15,6 @@ describe('AccessController', () => {
 
   describe('Access', () => {
 
-    // TODO: Create request(app) here
-    beforeEach(() => {
-
-    })
-
-    // TODO: Tear down request(app) to close database
-    afterEach(() => {
-
-    })
-
     describe('Authenticate', () => {
       const testURL: string = `${suiteURL}/authenticate`
 
@@ -35,9 +25,7 @@ describe('AccessController', () => {
           .send({'userName': 'admin@njcdd.org', 'password': 'admin'})
           .expect(200)
           .expect('Content-Type', /json/)
-          .then(() => {
-            done()
-          })
+          .end(done)
       })
     })
 
@@ -52,9 +40,7 @@ describe('AccessController', () => {
           .expect(200)
           .expect('Content-Type', /json/)
           .expect(acknowledge)
-          .then(() => {
-            done()
-          })
+          .end(done)
       })
     })
 
@@ -69,9 +55,7 @@ describe('AccessController', () => {
           .expect(200)
           .expect('Content-Type', /json/)
           .expect(acknowledge)
-          .then(() => {
-            done()
-          })
+          .end(done)
       })
     })
 
@@ -85,9 +69,7 @@ describe('AccessController', () => {
           .expect('Content-Type', /json/)
           .expect(response => isArray(response.body))
           .expect(response => response.body.length > 0)
-          .then(() => {
-            done()
-          })
+          .end(done)
       })
     })
 

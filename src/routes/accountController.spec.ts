@@ -34,9 +34,7 @@ describe('AccountController', () => {
         .expect('Content-Type', /json/)
         .expect(response => isArray(response.body))
         .expect(response => response.body.length == accountCount)
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 
@@ -53,9 +51,7 @@ describe('AccountController', () => {
         .expect(200)
         .expect('Content-Type', /json/)
         .expect(response => isPlainObject(response.body))
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 

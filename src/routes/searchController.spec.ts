@@ -15,16 +15,6 @@ const suiteURL: string = '/api/v1/search'
 
 describe(`SearchController`, () => {
 
-  // TODO: Create request(app) here
-  beforeEach(() => {
-
-  })
-
-  // TODO: Tear down request(app) to close database
-  afterEach(() => {
-
-  })
-
   describe.each<TestContentTuple>([
     [ 'Language' ],
     [ 'Role' ],
@@ -40,9 +30,7 @@ describe(`SearchController`, () => {
         .expect('Content-Type', /json/)
         .expect(response => isPlainObject(response.body))
         .expect(response => keys(response.body).length > 0)
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 
@@ -61,9 +49,7 @@ describe(`SearchController`, () => {
         .expect('Content-Type', /json/)
         .expect(response => isPlainObject(response.body))
         .expect(response => keys(response.body).length === keyCount)
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 
@@ -84,9 +70,7 @@ describe(`SearchController`, () => {
         .expect('Content-Type', /json/)
         .expect(response => isArray(response.body))
         .expect(response => response.body.length === queryCount)
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 
@@ -103,9 +87,7 @@ describe(`SearchController`, () => {
         .expect('Content-Type', /json/)
         .expect(response => isPlainObject(response.body))
         .expect(response => keys(response.body).length === queryKeyCount)
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 
@@ -132,9 +114,7 @@ describe(`SearchController`, () => {
         .expect(response => isPlainObject(response.body))
         .expect(response => has(response.body, 'queryId'))
         .expect(response => get(response.body, '_id.$iod') === '9000')
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 

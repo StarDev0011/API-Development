@@ -11,16 +11,6 @@ const suiteURL = '/api/v1/dashboard'
 
 describe('DashboardController', () => {
 
-  // TODO: Create request(app) here
-  beforeEach(() => {
-
-  })
-
-  // TODO: Tear down request(app) to close database
-  afterEach(() => {
-
-  })
-
   describe('Dashboard', () => {
     it(`GET ${suiteURL}`, (done: DoneCallback) => {
       request(app)
@@ -29,9 +19,7 @@ describe('DashboardController', () => {
         .expect('Content-Type', /json/)
         .expect(response => isPlainObject(response.body))
         .expect(response => response.body.length === 6)
-        .then(() => {
-          done()
-        })
+        .end(done)
     })
   })
 
