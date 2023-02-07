@@ -15,10 +15,6 @@ const swaggerOptions = {
     url: '/api-docs/swagger.json'
   }
 }
-const corsOptions: cors.CorsOptions = {
-  origin: '*'
-}
-
 // Use body parser to read sent json payloads
 app.use(
   urlencoded({
@@ -26,7 +22,7 @@ app.use(
   })
 )
 
-app.use(cors(corsOptions))
+app.use(cors())
 app.use(json())
 
 app.get('/api-docs/swagger.json', (_req, res: ExResponse) => res.json(swaggerDocument))
