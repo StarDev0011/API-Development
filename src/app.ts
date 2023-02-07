@@ -2,6 +2,7 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
+import cors from 'cors'
 import express, { json, NextFunction, Request as ExRequest, Response as ExResponse, urlencoded } from 'express'
 import swaggerUi from 'swagger-ui-express'
 import { ValidateError } from 'tsoa'
@@ -9,10 +10,13 @@ import { RegisterRoutes } from '../build/routes'
 import swaggerDocument from '../build/swagger.json'
 
 export const app = express()
-const options = {
+const swaggerOptions = {
   swaggerOptions: {
     url: '/api-docs/swagger.json'
   }
+}
+const corsOptions: cors.CorsOptions = {
+  origin: [ '*' ]
 }
 
 // Use body parser to read sent json payloads
@@ -22,10 +26,11 @@ app.use(
   })
 )
 
+app.use(cors(corsOptions))
 app.use(json())
 
 app.get('/api-docs/swagger.json', (_req, res: ExResponse) => res.json(swaggerDocument))
-app.use('/api-docs', swaggerUi.serveFiles(swaggerDocument, options), swaggerUi.setup(options))
+app.use('/api-docs', swaggerUi.serveFiles(swaggerDocument, swaggerOptions), swaggerUi.setup(swaggerOptions))
 
 RegisterRoutes(app)
 
