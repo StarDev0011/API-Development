@@ -2,8 +2,8 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Body, Controller, Get, Path, Post, Route } from 'tsoa'
-import { Account, AccountService, AccountView } from '../services/accountService'
+import { Controller, Get, Path, Route } from 'tsoa'
+import { Account, AccountService } from '../services/accountService'
 
 const accountService = new AccountService()
 
@@ -46,6 +46,7 @@ export class AccountController extends Controller {
       })
   }
 
+  /*
   @Post('view')
   public async viewAccount(@Body() body: AccountView): Promise<Record<string, unknown>> {
     return Promise
@@ -59,4 +60,5 @@ export class AccountController extends Controller {
         return err
       })
   }
+  */
 }

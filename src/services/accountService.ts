@@ -78,6 +78,7 @@ export class AccountService {
       })
   }
 
+  /*
   public view = async(query: Record<string, unknown>, fieldMap: Record<string, string>): Promise<Record<string, unknown>> => {
     return Promise
       .resolve(this.accountCollection)
@@ -99,6 +100,7 @@ export class AccountService {
         return result
       })
   }
+   */
 
   private connectToDatabase = async(dbUrl: string): Promise<Collection> => {
     return Promise
