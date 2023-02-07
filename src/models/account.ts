@@ -151,3 +151,8 @@ export interface Verified {
   reason?: string
   content?: Record<string, unknown>
 }
+
+export interface AccountView {
+  query: Record<string, unknown>
+  fieldMap: Record<string, string>
+}

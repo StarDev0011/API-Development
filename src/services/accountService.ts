@@ -5,9 +5,9 @@
 import config from 'config'
 import { find, isNull, isString, isUndefined, startsWith } from 'lodash'
 import { Collection, Db, MongoClient, ObjectId } from 'mongodb'
-import { Account } from '../models/account'
+import { Account, AccountView } from '../models/account'
 
-export { Account }
+export { Account, AccountView }
 
 const accounts: Array<Account> = require('../../data/source/account.json')
 
@@ -75,6 +75,28 @@ export class AccountService {
           console.log(`Running account query for id ${accountId}`)
           return (await accountCollection.findOne(query)) as unknown as Account
         }
+      })
+  }
+
+  public view = async(query: Record<string, unknown>, fieldMap: Record<string, string>): Promise<Record<string, unknown>> => {
+    return Promise
+      .resolve(this.accountCollection)
+      .then((accountCollection: Collection | undefined) => {
+        if(isUndefined(accountCollection)) {
+          throw new Error('Query on test data is not enabled')
+        }
+
+        return accountCollection
+      })
+      .then(async(accountCollection: Collection) => {
+        console.log(`Running list query against db collection '${accountCollection.collectionName}'`)
+        return (await accountCollection.find(query).toArray()) as unknown as Array<Account>
+      })
+      .then((accounts: Array<Account>) => {
+
+      })
+      .then((result: Record<string, unknown>) => {
+        return result
       })
   }
 

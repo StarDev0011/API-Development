@@ -2,8 +2,8 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Controller, Get, Path, Route } from 'tsoa'
-import { Account, AccountService } from '../services/accountService'
+import { Body, Controller, Get, Path, Post, Route } from 'tsoa'
+import { Account, AccountService, AccountView } from '../services/accountService'
 
 const accountService = new AccountService()
 
@@ -38,6 +38,20 @@ export class AccountController extends Controller {
       .resolve(accountService)
       .then((service: AccountService) => {
         return service.getAccount(accountId)
+      })
+      .catch((err) => {
+        console.error(err)
+        this.setStatus(400)
+        return err
+      })
+  }
+
+  @Post('view')
+  public async viewAccount(@Body() body: AccountView): Promise<Record<string, unknown>> {
+    return Promise
+      .resolve(accountService)
+      .then((service: AccountService) => {
+        return service.view(body.query, body.fieldMap)
       })
       .catch((err) => {
         console.error(err)
