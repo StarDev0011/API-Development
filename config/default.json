@@ -6,7 +6,8 @@
     "mongodb": {
       "database": "njcdd",
       "collections": {
-        "account": "accounts"
+        "account": "accounts",
+        "accountMain": "accountMain"
       }
     }
   }

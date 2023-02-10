@@ -2,10 +2,8 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Controller, Get, Path, Route } from 'tsoa'
-import { Account, AccountService } from '../services/accountService'
-
-const accountService = new AccountService()
+import {Controller, Get, Path, Query, Route} from 'tsoa'
+import {Account, AccountService, AccountView} from '../services/accountService'
 
 @Route('account')
 export class AccountController extends Controller {
@@ -16,15 +14,15 @@ export class AccountController extends Controller {
   @Get('list')
   public async getAccountList(): Promise<Array<Account>> {
     return Promise
-      .resolve(accountService)
-      .then((service: AccountService) => {
-        return service.accountList()
-      })
-      .catch((err) => {
-        console.error(err)
-        this.setStatus(400)
-        return err
-      })
+    .resolve(new AccountService())
+    .then((service: AccountService) => {
+      return service.accountList()
+    })
+    .catch((err) => {
+      console.error(err)
+      this.setStatus(400)
+      return err
+    })
   }
 
   /**
@@ -35,30 +33,33 @@ export class AccountController extends Controller {
   @Get('{accountId}')
   public async getAccount(@Path() accountId: string): Promise<Account> {
     return Promise
-      .resolve(accountService)
-      .then((service: AccountService) => {
-        return service.getAccount(accountId)
-      })
-      .catch((err) => {
-        console.error(err)
-        this.setStatus(400)
-        return err
-      })
+    .resolve(new AccountService())
+    .then((service: AccountService) => {
+      return service.getAccount(accountId)
+    })
+    .catch((err) => {
+      console.error(err)
+      this.setStatus(400)
+      return err
+    })
   }
 
-  /*
-  @Post('view')
-  public async viewAccount(@Body() body: AccountView): Promise<Record<string, unknown>> {
+  /**
+   * Retrieve Account View List
+   * @param {string} category
+   * @returns {Promise<Array<AccountView>>}
+   */
+  @Get('view')
+  public async viewAccount(@Query() category?: string): Promise<Array<AccountView>> {
     return Promise
-      .resolve(accountService)
-      .then((service: AccountService) => {
-        return service.view(body.query, body.fieldMap)
-      })
-      .catch((err) => {
-        console.error(err)
-        this.setStatus(400)
-        return err
-      })
+    .resolve(new AccountService('accountMain'))
+    .then((service: AccountService) => {
+      return service.view(category)
+    })
+    .catch((err) => {
+      console.error(err)
+      this.setStatus(400)
+      return err
+    })
   }
-  */
 }

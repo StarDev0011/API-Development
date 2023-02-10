@@ -2,7 +2,7 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { ObjectId } from 'mongodb'
+import {ObjectId} from 'mongodb'
 
 type ContactPermission = string
 type CountryCode = string
@@ -48,6 +48,26 @@ export interface Account {
   socialMedia: Array<SocialMedia>
   subscriptions: Array<Subscription>
   aces: Aces
+}
+
+export interface AccountView {
+  address: string | null
+  address2: string | null
+  addressVerified: string | null
+  category: string
+  city: string | null
+  county: string | null
+  email: string | null
+  emailVerified: string | null
+  firstName: string | null
+  gender: string | null
+  lastName: string | null
+  maritalStatus: string | null
+  middleName: string | null
+  postalCode: string | null
+  source: string
+  state: string | null
+  telephone: string | null
 }
 
 export interface Pronoun {
@@ -150,9 +170,4 @@ export interface Verified {
   date?: Date
   reason?: string
   content?: Record<string, unknown>
-}
-
-export interface AccountView {
-  query: Record<string, unknown>
-  fieldMap: Record<string, string>
 }
