@@ -11,7 +11,6 @@ export { Account, AccountView }
 @provideSingleton(AccountService)
 export class AccountService {
   constructor(@inject('MongoDatabase') private database: Database) {
-    console.log(`Database: '${database.databaseName}'`)
   }
 
   public list = async(): Promise<Array<Account>> => {

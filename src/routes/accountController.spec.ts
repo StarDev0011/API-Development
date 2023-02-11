@@ -2,10 +2,10 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import {isArray, isPlainObject} from 'lodash'
+import { isArray, isPlainObject, isUndefined } from 'lodash'
 import request from 'supertest'
-import {app} from '../app'
-import DoneCallback = jest.DoneCallback;
+import { app } from '../app'
+import DoneCallback = jest.DoneCallback
 
 type TestAccountTuple = [string | undefined]
 
@@ -29,46 +29,47 @@ describe('AccountController', () => {
 
     it(`GET ${testURL}`, (done: DoneCallback) => {
       request(app)
-      .get(testURL)
-      .expect(200)
-      .expect('Content-Type', /json/)
-      .expect(response => isArray(response.body))
-      .expect(response => response.body.length == accountCount)
-      .end(done)
+        .get(testURL)
+        .expect(200)
+        .expect('Content-Type', /json/)
+        .expect(response => isArray(response.body))
+        .expect(response => response.body.length == accountCount)
+        .end(done)
     })
   })
 
   describe.each<TestAccountTuple>([
     ['635f115e81285df6d6ce2acd'],
     ['635f100e81285df6d6ccf66a'],
-    ['635f116181285df6d6ce2d56']
+    ['635f116181285df6d6ce2d56'],
   ])('Account %s', (accountId?: string) => {
     const testURL = `${suiteURL}/${accountId || ''}`
 
     it(`GET ${testURL}`, (done: DoneCallback) => {
       request(app)
-      .get(testURL)
-      .expect(200)
-      .expect('Content-Type', /json/)
-      .expect(response => isPlainObject(response.body))
-      .end(done)
+        .get(testURL)
+        .expect(200)
+        .expect('Content-Type', /json/)
+        .expect(response => isPlainObject(response.body))
+        .end(done)
     })
   })
 
   describe.each<TestAccountTuple>([
     ['Vertical Response'],
     ['Mailing List'],
-    [undefined]
+    [undefined],
   ])('Account View %s', (category?: string) => {
-    const testURL = `${suiteURL}/view/?category=${encodeURIComponent(category || '')}`
+    const query = isUndefined(category) ? '' : `?category=${encodeURIComponent(category)}`
+    const testURL = `${suiteURL}/view/${query}`
 
     it(`GET ${testURL}`, (done: DoneCallback) => {
       request(app)
-      .get(testURL)
-      .expect(200)
-      .expect('Content-Type', /json/)
-      .expect(response => isArray(response.body))
-      .end(done)
+        .get(testURL)
+        .expect(200)
+        .expect('Content-Type', /json/)
+        .expect(response => isArray(response.body))
+        .end(done)
     })
   })
 
