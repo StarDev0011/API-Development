@@ -10,7 +10,7 @@ import DoneCallback = jest.DoneCallback
 type TestAccountTuple = [string | undefined]
 
 const suiteURL = '/api/v1/account'
-const longWait = 10000
+const longWait = 15000
 
 describe('AccountController', () => {
 

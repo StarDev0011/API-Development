@@ -1,11 +1,17 @@
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
 import { filter, first, get, has, isArray, lowerCase, split, toString, values } from 'lodash'
 import isEmail from 'validator/lib/isEmail'
+import { provideSingleton } from '../ioc'
 import { Access, AccessCredentials, AccessRegister, AccessUser, AcknowledgeRequest } from '../models/access'
 
 export { Access, AccessCredentials, AccessRegister, AccessUser, AcknowledgeRequest }
 
 const accessData: Record<string, Access> = require('../../data/source/access.json')
 
+@provideSingleton(AccessService)
 export class AccessService {
   public async authenticate(credentials: AccessCredentials): Promise<Access> {
     return Promise

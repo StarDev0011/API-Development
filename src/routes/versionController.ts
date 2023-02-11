@@ -2,29 +2,31 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Controller, Get, Route } from 'tsoa'
+import { Get, Route } from 'tsoa'
+import { inject, provideSingleton } from '../ioc'
 import { Version, VersionService } from '../services/versionService'
 
 
 @Route('version')
-export class VersionController extends Controller {
+@provideSingleton(VersionController)
+export class VersionController {
+  constructor(@inject(VersionService) private versionService: VersionService) {
+  }
+
   /**
    * Return the current API version info
    * @returns {Promise<Version>}
    */
   @Get()
   public async versionGet(): Promise<Version> {
-    return Promise.resolve(new VersionService())
-      .then((service: VersionService) => {
-        return service.get()
-      })
+    return Promise
+      .resolve(this.versionService.get())
       .then((result: Version) => {
         return result
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 }

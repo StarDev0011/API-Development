@@ -2,8 +2,6 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Dictionary } from 'lodash'
-
 export interface _id {
   '$oid': string
 }
@@ -12,7 +10,7 @@ export interface Search extends FieldAttribute {
   content: Array<Content>
 }
 
-export interface SearchCatalog extends Dictionary<Search> {
+export interface SearchCatalog extends Record<string, Search> {
 }
 
 export interface Content {
@@ -27,7 +25,7 @@ export interface FieldAttribute {
   label?: string
 }
 
-export interface FieldAttributes extends Dictionary<FieldAttribute> {
+export interface FieldAttributes extends Record<string, FieldAttribute> {
 }
 
 export interface Query {

@@ -2,19 +2,22 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Body, Controller, Get, Post, Route } from 'tsoa'
+import { Body, Get, Post, Route } from 'tsoa'
+import { inject, provideSingleton } from '../ioc'
 import {
   Access,
   AccessCredentials,
   AccessRegister,
   AccessService,
   AccessUser,
-  AcknowledgeRequest
+  AcknowledgeRequest,
 } from '../services/accessService'
 
 @Route('access')
-export class AccessController extends Controller {
-  private readonly accessService = new AccessService()
+@provideSingleton(AccessController)
+export class AccessController {
+  constructor(@inject(AccessService) private accessService: AccessService) {
+  }
 
   /**
    * Authenticate a registered login account
@@ -28,10 +31,9 @@ export class AccessController extends Controller {
       .then((result: Access) => {
         return result
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(404)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 
@@ -46,10 +48,9 @@ export class AccessController extends Controller {
       .then((result: Array<Access>) => {
         return result
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 
@@ -65,10 +66,9 @@ export class AccessController extends Controller {
       .then(() => {
         return new AcknowledgeRequest()
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 
@@ -78,7 +78,7 @@ export class AccessController extends Controller {
    * @returns {Promise<AccessService>}
    */
   @Post('reset')
-  public async resetPassword(@Body() requestBody: AccessUser): Promise<AccessService> {
+  public async resetPassword(@Body() requestBody: AccessUser): Promise<AcknowledgeRequest> {
     return this.accessService
       .forgotPassword(requestBody)
       .then((isExisting: boolean) => {
@@ -88,10 +88,9 @@ export class AccessController extends Controller {
 
         return new AcknowledgeRequest()
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 }

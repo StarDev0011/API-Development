@@ -15,11 +15,20 @@ import {
   pickBy,
   reduce,
   startCase,
-  trim
+  trim,
 } from 'lodash'
-import { Content, FieldAttributes, QueryCatalog, QueryItem, Search, SearchCatalog } from '../models/search'
+import { provideSingleton } from '../ioc'
+import {
+  Content,
+  FieldAttribute,
+  FieldAttributes,
+  QueryCatalog,
+  QueryItem,
+  Search,
+  SearchCatalog,
+} from '../models/search'
 
-export { QueryCatalog, QueryItem }
+export { FieldAttribute, FieldAttributes, QueryCatalog, QueryItem }
 
 const fieldCatalog = require('../../data/source/search.json') as SearchCatalog
 const queryCatalog = require('../../data/source/query.json') as QueryCatalog
@@ -65,6 +74,7 @@ async function isValidQuery(query: QueryItem): Promise<void> {
 
 }
 
+@provideSingleton(SearchService)
 export class SearchService {
   public async fieldContent(fieldName: FieldName): Promise<Record<string, string>> {
     return Promise
@@ -98,7 +108,7 @@ export class SearchService {
       })
       .then((selectableFields: SearchCatalog) => {
         return <FieldAttributes | void>mapValues(selectableFields, (field: Search, key: FieldName) => {
-          let res = omit(field, [ 'options' ])
+          let res = omit(field, ['options'])
           res.label = res.label || startCase(key)
           return res
         })
@@ -112,7 +122,7 @@ export class SearchService {
     return Promise
       .resolve(queryCatalog)
       .then((catalog: QueryCatalog) => {
-        return owner ? filter(catalog, [ 'owner', owner ]) : catalog
+        return owner ? filter(catalog, ['owner', owner]) : catalog
       })
   }
 
@@ -120,7 +130,7 @@ export class SearchService {
     return Promise
       .resolve(queryCatalog)
       .then((catalog: QueryCatalog) => {
-        return find(catalog, [ '_id.$oid', queryId ])
+        return find(catalog, ['_id.$oid', queryId])
       })
   }
 

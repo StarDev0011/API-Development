@@ -2,13 +2,16 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { Controller, Get, Route } from 'tsoa'
+import { Get, Route } from 'tsoa'
+import { inject, provideSingleton } from '../ioc'
 import { Dashboard, DashboardService } from '../services/dashboardService'
 
-const dashboardService = new DashboardService()
-
 @Route('dashboard')
-export class DashboardController extends Controller {
+@provideSingleton(DashboardController)
+export class DashboardController {
+  constructor(@inject(DashboardService) private dashboardService: DashboardService) {
+  }
+
   /**
    * Return an array containing dashboard items
    * @returns {Promise<Dashboard>}
@@ -16,17 +19,13 @@ export class DashboardController extends Controller {
   @Get()
   public async getDashboard(): Promise<Dashboard> {
     return Promise
-      .resolve(dashboardService)
-      .then((service: DashboardService) => {
-        return service.items()
-      })
+      .resolve(this.dashboardService.items())
       .then((result: Dashboard) => {
         return result
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 }

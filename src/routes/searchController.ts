@@ -2,14 +2,17 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { isUndefined } from 'lodash'
-import { Body, Controller, Get, Path, Post, Query, Route } from 'tsoa'
-import { QueryCatalog, QueryItem, SearchService } from '../services/searchService'
-
-const searchService = new SearchService()
+import { isString, isUndefined } from 'lodash'
+import { Body, Get, Path, Post, Query, Route } from 'tsoa'
+import { inject, provideSingleton } from '../ioc'
+import { FieldAttributes, QueryCatalog, QueryItem, SearchService } from '../services/searchService'
 
 @Route('search')
-export class SearchController extends Controller {
+@provideSingleton(SearchController)
+export class SearchController {
+  constructor(@inject(SearchService) private searchService: SearchService) {
+  }
+
   /**
    * Return a Mapping of fields that can be queried
    * @param {string} field
@@ -18,14 +21,13 @@ export class SearchController extends Controller {
   @Get('field/{field}')
   public async getFieldContent(@Path() field: string): Promise<Record<string, string>> {
     return Promise
-      .resolve(searchService)
-      .then((service: SearchService) => {
-        return service.fieldContent(field)
+      .resolve(decodeURIComponent(field))
+      .then((decodedField: string) => {
+        return this.searchService.fieldContent(decodedField)
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 
@@ -35,16 +37,15 @@ export class SearchController extends Controller {
    * @returns {Promise<Dictionary<string>>}
    */
   @Get('attributes')
-  public async getFieldAttributes(@Query() field?: string): Promise<Record<string, string>> {
+  public async getFieldAttributes(@Query() field?: string): Promise<FieldAttributes> {
     return Promise
-      .resolve(searchService)
-      .then((service: SearchService) => {
-        return service.fieldAttributes(field)
+      .resolve(isString(field) ? decodeURIComponent(field) : undefined)
+      .then((decodedField?: string) => {
+        return this.searchService.fieldAttributes(decodedField)
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 
@@ -56,14 +57,13 @@ export class SearchController extends Controller {
   @Get('queries')
   public async getQueries(@Query() owner?: string | null): Promise<QueryCatalog> {
     return Promise
-      .resolve(searchService)
-      .then((service: SearchService) => {
-        return service.queryList(owner)
+      .resolve(isString(owner) ? decodeURIComponent(owner) : undefined)
+      .then((decodedOwner?: string) => {
+        return this.searchService.queryList(decodedOwner)
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 
@@ -75,9 +75,9 @@ export class SearchController extends Controller {
   @Get('query/{queryId}')
   public async getQuery(@Path() queryId: string): Promise<QueryItem> {
     return Promise
-      .resolve(searchService)
-      .then((service: SearchService) => {
-        return service.queryItem(queryId)
+      .resolve(decodeURIComponent(queryId))
+      .then((decodedId: string) => {
+        return this.searchService.queryItem(decodedId)
       })
       .then((result: QueryItem | undefined) => {
         if(isUndefined(result)) {
@@ -86,10 +86,9 @@ export class SearchController extends Controller {
 
         return result
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 
@@ -101,17 +100,13 @@ export class SearchController extends Controller {
   @Post('query')
   public async saveQuery(@Body() queryItem: QueryItem): Promise<Record<string, string>> {
     return Promise
-      .resolve(searchService)
-      .then((service: SearchService) => {
-        return service.querySave(queryItem)
-      })
+      .resolve(this.searchService.querySave(queryItem))
       .then((result: string) => {
         return {queryId: result}
       })
-      .catch((err) => {
+      .catch((err: Error | string) => {
         console.error(err)
-        this.setStatus(400)
-        return err
+        throw err instanceof Error ? err : new Error(err)
       })
   }
 }

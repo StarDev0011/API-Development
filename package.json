@@ -62,6 +62,9 @@
       "json",
       "node"
     ],
+    "roots": [
+      "src"
+    ],
     "setupFiles": [
       "./jest.config.js"
     ],
