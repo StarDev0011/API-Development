@@ -3,11 +3,11 @@
     "data": {
       "source": "./data/source"
     },
-    "mongodb": {
-      "database": "njcdd",
-      "collections": {
-        "account": "accounts",
-        "accountMain": "accountMain"
+    "database": {
+      "name": "njcdd",
+      "table": {
+        "account": "account",
+        "accountView": "accountMain"
       }
     }
   }

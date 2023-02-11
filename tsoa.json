@@ -9,6 +9,7 @@
   "noImplicitAdditionalProperties": "throw-on-extras",
   "routes": {
     "basePath": "/api/v1",
+    "iocModule": "src/ioc",
     "routesDir": "build"
   },
   "spec": {

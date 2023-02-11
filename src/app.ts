@@ -12,14 +12,14 @@ import swaggerDocument from '../build/swagger.json'
 export const app = express()
 const swaggerOptions = {
   swaggerOptions: {
-    url: '/api-docs/swagger.json'
-  }
+    url: '/api-docs/swagger.json',
+  },
 }
 // Use body parser to read sent json payloads
 app.use(
   urlencoded({
-    extended: true
-  })
+    extended: true,
+  }),
 )
 
 app.use(cors())
@@ -32,7 +32,7 @@ RegisterRoutes(app)
 
 app.use(function notFoundHandler(_req, res: ExResponse) {
   res.status(404).send({
-    message: 'Not Found'
+    message: 'Not Found',
   })
 })
 
@@ -40,18 +40,21 @@ app.use(function errorHandler(
   err: unknown,
   req: ExRequest,
   res: ExResponse,
-  next: NextFunction
+  next: NextFunction,
 ): ExResponse | void {
   if(err instanceof ValidateError) {
     console.warn(`Caught Validation Error for ${req.path}:`, err.fields)
     return res.status(422).json({
       message: 'Validation Failed',
-      details: err?.fields
+      details: err?.fields,
     })
   }
   if(err instanceof Error) {
-    return res.status(500).json({
-      message: 'Internal Server Error'
+    return res.status(500).json(err)
+  }
+  if(err instanceof String) {
+    return res.status(400).json({
+      message: err,
     })
   }
 
