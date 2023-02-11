@@ -6,7 +6,8 @@
     "database": {
       "name": "njcdd",
       "table": {
-        "account": "account",
+        "account": "accounts",
+        "accounts": "accounts",
         "accountView": "accountMain"
       }
     }

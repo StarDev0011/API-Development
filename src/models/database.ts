@@ -5,8 +5,6 @@
 import { Account, AccountView } from './account'
 
 export interface Database {
-  databaseName: string | null
-
   accountById(accountId: string): Promise<Account | null>
 
   accountList<T extends Account | AccountView>(category?: string | null): Promise<Array<T>>

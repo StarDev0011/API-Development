@@ -3,7 +3,7 @@
  */
 
 import config from 'config'
-import { isNull, isUndefined } from 'lodash'
+import { isNull, isString, isUndefined } from 'lodash'
 import { Collection, Db, Document, MongoClient, ObjectId } from 'mongodb'
 import { injectable } from '../ioc'
 import { Account, AccountView } from '../models/account'
@@ -18,21 +18,16 @@ const accountViewCollectionName: string = config.get('api.database.table.account
 
 @injectable()
 export class MongoDatabase implements Database {
-  private readonly mongoClient: MongoClient
-  private readonly db: Db
-
-  constructor() {
-    this.mongoClient = new MongoClient(mongodbUrl)
-    this.db = this.mongoClient.db(databaseName)
-  }
-
-  public get databaseName(): string | null {
-    return (this.db && this.db.databaseName) || null
-  }
 
   public accountById = async(accountId: string): Promise<Account | null> => {
+    let client: MongoClient
+
     return Promise
-      .resolve(this.db.collection(accountCollectionName))
+      .resolve(new MongoClient(mongodbUrl))
+      .then((conn: MongoClient) => {
+        client = conn
+        return this.getCollection(client, databaseName, accountCollectionName)
+      })
       .then((collection: Collection) => {
         const query = {
           _id: new ObjectId(accountId),
@@ -43,18 +38,42 @@ export class MongoDatabase implements Database {
       .then((document: Document | null) => {
         return isNull(document) ? null : document as Account
       })
+      .finally(async() => {
+        if(client) {
+          await client.close()
+        }
+      })
   }
 
   public accountList = async <T extends Account | AccountView>(category?: string | null): Promise<Array<T>> => {
+    let client: MongoClient
     const collectionName: string = isUndefined(category) ? accountCollectionName : accountViewCollectionName
+    const query = isString(category) ? {category: category} : {}
 
     return Promise
-      .resolve(this.db.collection(collectionName))
+      .resolve(new MongoClient(mongodbUrl))
+      .then((conn: MongoClient) => {
+        client = conn
+        return this.getCollection(client, databaseName, collectionName)
+      })
       .then((collection: Collection) => {
-        return collection.find({}).toArray()
+        return collection.find(query).toArray()
       })
       .then((documents: Array<Document>) => {
         return documents as Array<T>
+      })
+      .finally(async() => {
+        if(client) {
+          await client.close()
+        }
+      })
+  }
+
+  private getCollection = async(client: MongoClient, dbName: string, collectionName: string): Promise<Collection> => {
+    return Promise
+      .resolve(client.db(dbName))
+      .then((db: Db) => {
+        return db.collection(collectionName)
       })
   }
 

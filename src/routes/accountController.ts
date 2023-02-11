@@ -2,6 +2,7 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
+import { isString } from 'lodash'
 import { Get, Path, Query, Route } from 'tsoa'
 import { inject, provideSingleton } from '../ioc'
 import { Account, AccountService, AccountView } from '../services/accountService'
@@ -34,10 +35,13 @@ export class AccountController {
    * @param {string} accountId
    * @returns {Promise<Account | Record<string, unknown>>}
    */
-  @Get('{accountId}')
+  @Get('id/{accountId}')
   public async getAccount(@Path() accountId: string): Promise<Account | Record<string, unknown>> {
     return Promise
-      .resolve(this.accountService.account(accountId))
+      .resolve(decodeURIComponent(accountId))
+      .then((decodedId: string) => {
+        return this.accountService.account(decodedId)
+      })
       .then((result: Account | null) => {
         return result ?? {}
       })
@@ -55,7 +59,10 @@ export class AccountController {
   @Get('view')
   public async viewAccount(@Query() category?: string | null): Promise<Array<AccountView>> {
     return Promise
-      .resolve(this.accountService.view(category))
+      .resolve(isString(category) ? decodeURIComponent(category) : category)
+      .then((decodedCategory?: string | null) => {
+        return this.accountService.view(decodedCategory)
+      })
       .then((result: Array<AccountView>) => {
         return result
       })

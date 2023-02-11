@@ -10,6 +10,7 @@ import DoneCallback = jest.DoneCallback
 type TestAccountTuple = [string | undefined]
 
 const suiteURL = '/api/v1/account'
+const longWait = 10000
 
 describe('AccountController', () => {
 
@@ -35,7 +36,7 @@ describe('AccountController', () => {
         .expect(response => isArray(response.body))
         .expect(response => response.body.length == accountCount)
         .end(done)
-    })
+    }, longWait)
   })
 
   describe.each<TestAccountTuple>([
@@ -43,7 +44,8 @@ describe('AccountController', () => {
     ['635f100e81285df6d6ccf66a'],
     ['635f116181285df6d6ce2d56'],
   ])('Account %s', (accountId?: string) => {
-    const testURL = `${suiteURL}/${accountId || ''}`
+    const _accountId = isUndefined(accountId) ? '' : encodeURIComponent(accountId)
+    const testURL = `${suiteURL}/id/${_accountId}`
 
     it(`GET ${testURL}`, (done: DoneCallback) => {
       request(app)
@@ -70,7 +72,7 @@ describe('AccountController', () => {
         .expect('Content-Type', /json/)
         .expect(response => isArray(response.body))
         .end(done)
-    })
+    }, longWait)
   })
 
 })
