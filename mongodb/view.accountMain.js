@@ -1,3 +1,5 @@
+db.accountMain.drop();
+
 db.createView(
     'accountMain',
     'contact',
@@ -15,7 +17,7 @@ db.createView(
                 _id: 1,
                 category: {$first: '$context.context'},
                 source: '$aces.provenance.sourceFilename',
-                firstName: '$givenName',
+                firstName: { $ifNull:  }'$givenName',
                 middleName: '$additionalName',
                 lastName: '$givenName',
                 gender: 1,
@@ -33,4 +35,4 @@ db.createView(
             }
         }
     ]
-)
+);
