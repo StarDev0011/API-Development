@@ -1,0 +1,9 @@
+
+use("njcdd");
+
+db.accountView.aggregate(
+    {
+        $sample: { size: 100}
+    }
+);
+

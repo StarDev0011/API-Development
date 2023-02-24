@@ -6,6 +6,7 @@ import { Container, decorate, inject, injectable } from 'inversify'
 import { buildProviderModule } from 'inversify-binding-decorators'
 import { Controller } from 'tsoa'
 import { Database, MongoDatabase } from './services/mongoDatabase'
+import { TestDatabase } from './services/testDatabase'
 import { provideSingleton } from './util/provideSingleton'
 
 // Create a new container tsoa can use
@@ -16,5 +17,6 @@ decorate(injectable(), Controller)         // Make tsoa's Controller injectable
 // make inversify aware of inversify-binding-decorators
 iocContainer.load(buildProviderModule())
 iocContainer.bind<Database>('MongoDatabase').to(MongoDatabase)
+iocContainer.bind<Database>('TestDatabase').to(TestDatabase)
 
 export { iocContainer, provideSingleton, inject, injectable }

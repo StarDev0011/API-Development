@@ -2,20 +2,11 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import {ObjectId} from 'mongodb'
+import { ObjectId } from 'mongodb'
 
 type ContactPermission = string
 type CountryCode = string
-type Gender = string
-type HonorificPrefix = string
-type HonorificSuffix = string
-type Interest = string
-type Language = 'eng' | 'fra' | 'spa'
-type MaritalStatus = string
-type PronounObject = string
-type PronounSubject = string
 type Publication = string
-type Role = string
 type Site = string
 type SocialMediaPermission = string
 type SocialMediaPlatform = string
@@ -28,35 +19,18 @@ type VerifiedStatus = string
 
 export interface Account {
   id?: ObjectId
-  familyName: string | null
-  givenName: string | null
-  additionalName: string | null
-  fullName: string | null
-  honorificPrefix: Array<HonorificPrefix>
-  honorificSuffix: Array<HonorificSuffix>
-  organizationTitle: string | null
-  birthDate: Date | null
-  maritalStatus: MaritalStatus | null
-  gender: Gender | null
-  pronoun: Pronoun
-  languages: Array<Language>
-  roles: Array<Role>
-  interests: Array<Interest>
-  emails: Array<Email>
-  telephones: Array<Telephone>
-  addresses: Array<Address>
-  socialMedia: Array<SocialMedia>
-  subscriptions: Array<Subscription>
-  aces: Aces
-}
-
-export interface AccountView {
   address: string | null
   address2: string | null
   addressVerified: string | null
-  category: string
+  category: string | null
   city: string | null
   county: string | null
+  districtCongressional: string | number | null
+  districtSchoolElementary: string | null
+  districtSchoolSecondary: string | null
+  districtSchoolUnified: string | null
+  districtStateLegislativeHouse: string | number | null
+  districtStateLegislativeSenate: string | number | null
   email: string | null
   emailVerified: string | null
   firstName: string | null
@@ -65,14 +39,9 @@ export interface AccountView {
   maritalStatus: string | null
   middleName: string | null
   postalCode: string | null
-  source: string
+  source: string | null
   state: string | null
   telephone: string | null
-}
-
-export interface Pronoun {
-  subject: PronounSubject | null
-  object: PronounObject | null
 }
 
 export interface Email {

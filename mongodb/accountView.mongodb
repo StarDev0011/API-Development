@@ -1,0 +1,82 @@
+/*
+*  accountView
+*/
+
+use("njcdd");
+
+db.accountView.drop();
+
+db.createView(
+    'accountView',
+    'accountCore',
+    [
+        {
+            $match: {}
+        },
+        {
+            $project: {
+                _id: 1,
+                organization: 1,
+                address: 1,
+                address2: 1,
+                addressVerified: 1,
+                category: 1,
+                city: 1,
+                county: 1,
+                email: 1,
+                emailVerified: 1,
+                firstName: 1,
+                gender: 1,
+                lastName: 1,
+                maritalStatus: 1,
+                middleName: 1,
+                postalCode: 1,
+                source: 1,
+                state: 1,
+                telephone: 1,
+                districtCongressional: {
+                    $ifNull: [
+                        {$first: "$geocode.congressional_districts.district_number"},
+                        null
+                    ]
+                },
+                districtStateLegislativeHouse: {
+                    $ifNull: [
+                        {$first: "$geocode.state_legislative_districts.house.district_number"},
+                        null
+                    ]
+                },
+                districtStateLegislativeSenate: {
+                    $ifNull: [
+                        {$first: "$geocode.state_legislative_districts.senate.district_number"},
+                        null
+                    ]
+                },
+                districtSchoolSecondary: {
+                    $toUpper: {
+                        $ifNull: [
+                            "$geocode.school_districts.secondary.name",
+                            null
+                        ]
+                    }
+                },
+                districtSchoolElementary: {
+                    $toUpper: {
+                        $ifNull: [
+                            "$geocode.school_districts.elementary.name",
+                            null
+                        ]
+                    }
+                },
+                districtSchoolUnified: {
+                    $toUpper: {
+                        $ifNull: [
+                            "$geocode.school_districts.unified.name",
+                            null
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+);

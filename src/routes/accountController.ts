@@ -2,10 +2,9 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { isString } from 'lodash'
-import { Get, Path, Query, Route } from 'tsoa'
+import { Get, Path, Route } from 'tsoa'
 import { inject, provideSingleton } from '../ioc'
-import { Account, AccountService, AccountView } from '../services/accountService'
+import { Account, AccountService } from '../services/accountService'
 
 @Route('account')
 @provideSingleton(AccountController)
@@ -52,18 +51,18 @@ export class AccountController {
   }
 
   /**
-   * Retrieve Account View List
+   * Retrieve Account List by category
    * @param {string} category
-   * @returns {Promise<Array<AccountView>>}
+   * @returns {Promise<Array<Account>>}
    */
-  @Get('view')
-  public async viewAccount(@Query() category?: string | null): Promise<Array<AccountView>> {
+  @Get('category/{category}')
+  public async accountCategory(@Path() category: string): Promise<Array<Account>> {
     return Promise
-      .resolve(isString(category) ? decodeURIComponent(category) : category)
+      .resolve(decodeURIComponent(category))
       .then((decodedCategory?: string | null) => {
         return this.accountService.view(decodedCategory)
       })
-      .then((result: Array<AccountView>) => {
+      .then((result: Array<Account>) => {
         return result
       })
       .catch((err: Error | string) => {

@@ -2,77 +2,59 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { isArray, isPlainObject, isUndefined } from 'lodash'
+import { get, isArray, isNull, isPlainObject, sampleSize } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
-import DoneCallback = jest.DoneCallback
+import { Account } from '../models/account'
 
-type TestAccountTuple = [string | undefined]
+type TestAccountTuple = [string | null, number]
 
 const suiteURL = '/api/v1/account'
-const longWait = 15000
+const account = require('../../data/source/account.json')
+const accountSample: Array<Account> = sampleSize(account, 5)
+const accountsAndCategories: Array<TestAccountTuple> = [
+  ['VERTICAL RESPONSE', 24],
+  ['PEOPLE AND FAMILIES', 64],
+  ['GIBBERISH', 0],
+  [null, 100],
+]
 
 describe('AccountController', () => {
 
-  // TODO: Create request(app) here
-  beforeEach(() => {
+  describe.each<TestAccountTuple>(
+    accountsAndCategories,
+  )('Account List %s', (category: string | null, expectedCount: number) => {
+    const path = isNull(category) ? 'list' : 'category'
+    const testURL: string = `${suiteURL}/${path}/${category ?? ''}`
 
-  })
-
-  // TODO: Tear down request(app) to close database
-  afterEach(() => {
-
-  })
-
-  describe('List', () => {
-    const testURL: string = `${suiteURL}/list`
-    const accountCount = 21
-
-    it(`GET ${testURL}`, (done: DoneCallback) => {
-      request(app)
+    it(`Should GET ${testURL}`, async() => {
+      const response = await request(app)
         .get(testURL)
-        .expect(200)
-        .expect('Content-Type', /json/)
-        .expect(response => isArray(response.body))
-        .expect(response => response.body.length == accountCount)
-        .end(done)
-    }, longWait)
-  })
+        .set('Accept', 'application/json')
 
-  describe.each<TestAccountTuple>([
-    ['635f115e81285df6d6ce2acd'],
-    ['635f100e81285df6d6ccf66a'],
-    ['635f116181285df6d6ce2d56'],
-  ])('Account %s', (accountId?: string) => {
-    const _accountId = isUndefined(accountId) ? '' : encodeURIComponent(accountId)
-    const testURL = `${suiteURL}/id/${_accountId}`
-
-    it(`GET ${testURL}`, (done: DoneCallback) => {
-      request(app)
-        .get(testURL)
-        .expect(200)
-        .expect('Content-Type', /json/)
-        .expect(response => isPlainObject(response.body))
-        .end(done)
+      expect(response.status).toEqual(200)
+      expect(response.headers['content-type']).toMatch(/json/)
+      expect(isArray(response.body)).toBeTruthy()
+      expect(response.body.length).toEqual(expectedCount)
     })
   })
 
-  describe.each<TestAccountTuple>([
-    ['Vertical Response'],
-    ['Mailing List'],
-    [undefined],
-  ])('Account View %s', (category?: string) => {
-    const query = isUndefined(category) ? '' : `?category=${encodeURIComponent(category)}`
-    const testURL = `${suiteURL}/view/${query}`
+  describe.each<Account>(
+    accountSample,
+  )(`Account '${account._id}'`, (account: Account) => {
+    const accountId = get(account, '_id', '')
+    const testURL = `${suiteURL}/id/${encodeURIComponent(accountId)}`
 
-    it(`GET ${testURL}`, (done: DoneCallback) => {
-      request(app)
+    it(`Should GET ${testURL}`, async() => {
+      const response = await request(app)
         .get(testURL)
-        .expect(200)
-        .expect('Content-Type', /json/)
-        .expect(response => isArray(response.body))
-        .end(done)
-    }, longWait)
+        .set('Accept', 'application/json')
+
+      expect(response.status).toEqual(200)
+      expect(response.headers['content-type']).toMatch(/json/)
+      expect(isPlainObject(response.body)).toBeTruthy()
+      expect(get(response, 'body._id')).toEqual(accountId)
+    })
   })
 
 })

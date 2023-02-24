@@ -1,0 +1,23 @@
+db.accountCore.find(
+    {
+        addressVerified: {$ne: 'verified'},
+        address: {$nin: [ null, '' ]},
+        $or: [
+            {address2: {$nin: [ null, '' ]}},
+            {city: {$nin: [ null, '' ]}},
+            {county: {$nin: [ null, '' ]}},
+            {state: {$nin: [ null, '' ]}},
+            {postalCode: {$nin: [ null, '', '00000' ]}},
+        ]
+    },
+    {
+        _id: 1, 
+        address: 1, 
+        address2: 1, 
+        addressVerified: 1, 
+        city: 1, 
+        county: 1, 
+        postalCode: 1, 
+        state: 1
+    }
+)

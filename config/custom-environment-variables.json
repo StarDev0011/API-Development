@@ -1,5 +1,6 @@
 {
   "api": {
+    "env": "NODE_ENV",
     "port": "NJCDD_ACCOUNT_API_PORT",
     "data": {
       "path": "NJCDD_API_DATAPATH"

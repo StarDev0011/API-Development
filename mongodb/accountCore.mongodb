@@ -1,0 +1,210 @@
+/*
+ * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
+ */
+
+/*
+ * accountCore View
+ */
+
+use('njcdd');
+
+db.accountCore.drop();
+
+db.createView(
+  "accountCore",
+  "contact",
+  [
+    {
+      $match: {
+        $or: [
+          {
+            addresses: {
+              $exists: 1,
+              $ne: []
+            }
+          },
+          {
+            emails: {
+              $exists: 1,
+              $ne: []
+            }
+          },
+          {
+            telephones: {
+              $exists: 1,
+              $ne: []
+            }
+          }
+        ]
+      }
+    },
+    {
+      $lookup: {
+        from: "context",
+        localField: "aces.provenance.sourceFilename",
+        foreignField: "filename",
+        as: "context"
+      }
+    },
+    {
+      $project: {
+        _id: 1,
+        organization: {
+          $toUpper: {
+            $ifNull: [
+              {$first: "$addresses.organization"},
+              null
+            ]
+          }
+        },
+        address: {
+          $ifNull: [
+            {$first: "$addresses.verified.usps.AddressValidateResponse.Address.Address2"},
+            null
+          ]
+        },
+        address2: {
+          $cond: [
+            {
+              $eq: [
+                {$first: "$addresses.verified.usps.AddressValidateResponse.Address.Address1"},
+                "-"
+              ]
+            },
+            null,
+            {
+              $ifNull: [
+                {$first: "$addresses.verified.usps.AddressValidateResponse.Address.Address1"},
+                null
+              ]
+            }
+          ]
+        },
+        addressVerified: {
+          $ifNull: [
+            {$first: "$addresses.verified.status"},
+            null
+          ]
+        },
+        city: {
+          $ifNull: [
+            {$first: "$addresses.verified.usps.AddressValidateResponse.Address.City"},
+            {$first: "$addresses.city"},
+            null
+          ]
+        },
+        county: {
+          $ifNull: [
+            {$first: "$addresses.county"},
+            null
+          ]
+        },
+        state: {
+          $ifNull: [
+            {$first: "$addresses.verified.usps.AddressValidateResponse.Address.State"},
+            {$first: "$addresses.state"},
+            null
+          ]
+        },
+        postalCode: {
+          $ifNull: [
+            {$first: "$addresses.verified.usps.AddressValidateResponse.Address.Zip5"},
+            {$first: "$addresses.postalCode"},
+            null
+          ]
+        },
+        firstName: {
+          $toUpper: {
+            $ifNull: [
+              "$aces.humanName.first",
+              "$firstName",
+              null
+            ]
+          }
+        },
+        middleName: {
+          $toUpper: {
+            $ifNull: [
+              "$aces.humanName.middle",
+              "$middleName",
+              null
+            ]
+          }
+        },
+        lastName: {
+          $toUpper: {
+            $ifNull: [
+              "$aces.humanName.last",
+              "$lastName",
+              null
+            ]
+          }
+        },
+        email: {
+          $toUpper: {
+            $ifNull: [
+              {$first: "$emails.address"},
+              null
+            ]
+          }
+        },
+        emailVerified: {
+          $ifNull: [
+            {$first: "$emails.verified.status"},
+            null
+          ]
+        },
+        telephone: {
+          $ifNull: [
+            {$first: "$telephones.number"},
+            null
+          ]
+        },
+        gender: {
+          $toUpper: {
+            $cond: [
+              {
+                $eq: ["$gender", ""]
+              },
+              null,
+              "$gender"
+            ]
+          }
+        },
+        maritalStatus: {
+          $toUpper: {
+            $cond: [
+              {
+                $eq: ["$maritalStatus", ""]
+              },
+              null,
+              "$maritalStatus"
+            ]
+          }
+        },
+        category: {
+          $toUpper: {
+            $ifNull: [
+              {$first: "$context.context"},
+              null
+            ]
+          }
+        },
+        source: {
+          $toUpper:
+            "$aces.provenance.sourceFilename"
+        },
+        geocode: "$aces.provenance.geocode"
+      }
+    },
+    {
+      $match: {
+        $or: [
+          {address: {$nin: [null, ""]}},
+          {email: {$nin: [null, ""]}},
+          {telephone: {$nin: [null, ""]}}
+        ]
+      }
+    }
+  ]
+);

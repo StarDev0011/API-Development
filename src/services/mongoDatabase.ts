@@ -6,10 +6,10 @@ import config from 'config'
 import { isNull, isString, isUndefined } from 'lodash'
 import { Collection, Db, Document, MongoClient, ObjectId } from 'mongodb'
 import { injectable } from '../ioc'
-import { Account, AccountView } from '../models/account'
+import { Account } from '../models/account'
 import { Database } from '../models/database'
 
-export { Account, AccountView, Database }
+export { Account, Database }
 
 const mongodbUrl: string = config.get('api.database.mongodb.url')
 const databaseName: string = config.get('api.database.name')
@@ -45,7 +45,7 @@ export class MongoDatabase implements Database {
       })
   }
 
-  public accountList = async <T extends Account | AccountView>(category?: string | null): Promise<Array<T>> => {
+  public accountList = async(category?: string | null): Promise<Array<Account>> => {
     let client: MongoClient
     const collectionName: string = isUndefined(category) ? accountCollectionName : accountViewCollectionName
     const query = isString(category) ? {category: category} : {}
@@ -60,7 +60,7 @@ export class MongoDatabase implements Database {
         return collection.find(query).toArray()
       })
       .then((documents: Array<Document>) => {
-        return documents as Array<T>
+        return documents as Array<Account>
       })
       .finally(async() => {
         if(client) {
