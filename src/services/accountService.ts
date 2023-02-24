@@ -9,7 +9,7 @@ import { Database } from '../models/database'
 
 export { Account }
 
-const runtimeDatabase = config.get<string>('api.database.runtime')
+const runtimeDatabase = config.get<string>('database.runtime')
 
 @provideSingleton(AccountService)
 export class AccountService {

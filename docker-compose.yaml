@@ -12,9 +12,10 @@ services:
     hostname: njcdd-account-api
     ports:
       - "${NJCDD_ACCOUNT_API_PORT}:${NJCDD_ACCOUNT_API_PORT}"
-    expose:
-      - "${NJCDD_ACCOUNT_API_PORT}"
     environment:
-      NJCDD_ACCOUNT_API_PORT: "${NJCDD_ACCOUNT_API_PORT}"
+      #      NJCDD_ACCOUNT_API_PORT: "$NJCDD_ACCOUNT_API_PORT"
+      #      NJCDD_API_DATAPATH: "$NJCDD_API_DATAPATH"
+      NJCDD_MONGODB_URI: "$NJCDD_MONGODB_URI"
+      NODE_ENV: "$NJCDD_ENV"
     networks:
       - aces-net

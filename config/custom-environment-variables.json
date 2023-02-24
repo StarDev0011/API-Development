@@ -1,0 +1,11 @@
+{
+  "data": {
+    "source": "NJCDD_API_DATAPATH"
+  },
+  "database": {
+    "mongodb": {
+      "url": "NJCDD_MONGODB_URI"
+    }
+  },
+  "port": "NJCDD_ACCOUNT_API_PORT"
+}

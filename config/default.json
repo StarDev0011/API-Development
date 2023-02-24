@@ -1,0 +1,11 @@
+{
+  "database": {
+    "name": "njcdd",
+    "collection": {
+      "account": "contact",
+      "accounts": "contact",
+      "accountView": "accountView",
+      "query": "queryCatalog"
+    }
+  }
+}

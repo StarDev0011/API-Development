@@ -1,7 +1,5 @@
 {
-  "api": {
-    "database": {
-      "runtime": "MongoDatabase"
-    }
+  "database": {
+    "runtime": "MongoDatabase"
   }
 }

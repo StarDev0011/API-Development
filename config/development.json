@@ -1,7 +1,5 @@
 {
-  "api": {
-    "database": {
-      "runtime": "TestDatabase"
-    }
+  "database": {
+    "runtime": "TestDatabase"
   }
 }

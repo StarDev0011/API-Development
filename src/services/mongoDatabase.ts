@@ -12,11 +12,11 @@ import { Query } from '../models/search'
 
 export { Account, Database }
 
-const databaseName: string = config.get('api.database.name')
-const accountCollectionName: string = config.get('api.database.table.account')
-const accountViewCollectionName: string = config.get('api.database.table.accountView')
-const queryCollection: string = config.get('api.database.table.query')
-const mongodbUrl: string = config.get('api.database.mongodb.url') || ''
+const databaseName: string = config.get('database.name')
+const accountCollectionName: string = config.get('database.collection.account')
+const accountViewCollectionName: string = config.get('database.collection.accountView')
+const queryCollection: string = config.get('database.collection.query')
+const mongodbUrl: string = config.get('database.mongodb.url')
 const upsertOptions = {
   upsert: true,
   returnNewDocument: true,
