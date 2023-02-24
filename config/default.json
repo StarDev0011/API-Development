@@ -1,6 +1,9 @@
 {
   "database": {
     "name": "njcdd",
+    "mongodb": {
+      "url": "NJCDD_MONGODB_URI"
+    },
     "collection": {
       "account": "contact",
       "accounts": "contact",
