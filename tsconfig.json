@@ -141,6 +141,7 @@
   "include": [
     "package.json",
     "src/**/*",
+    "config/**/*.js",
     "config/**/*.json",
     "data/**/*.json"
   ],
