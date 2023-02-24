@@ -11,11 +11,11 @@ services:
     image: anthonysw/njcdd-account-api:latest
     hostname: njcdd-account-api
     ports:
-      - "${NJCDD_ACCOUNT_API_PORT}:${NJCDD_ACCOUNT_API_PORT}"
+      - "${NJCDD_ACCOUNT_API_PORT:-12100}:${NJCDD_ACCOUNT_API_PORT:-12100}"
     environment:
       #      NJCDD_ACCOUNT_API_PORT: "$NJCDD_ACCOUNT_API_PORT"
       #      NJCDD_API_DATAPATH: "$NJCDD_API_DATAPATH"
-      NJCDD_MONGODB_URI: "$NJCDD_MONGODB_URI"
-      NODE_ENV: "$NJCDD_ENV"
+      NJCDD_MONGODB_URI: "${NJCDD_MONGODB_URI:-mongodb://localhost:27017/njcdd}"
+      NODE_ENV: "${NJCDD_ENV:-development}"
     networks:
       - aces-net
