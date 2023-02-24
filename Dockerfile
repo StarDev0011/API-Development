@@ -24,7 +24,7 @@ RUN mkdir -p /opt/njcdd/account-api/build
 WORKDIR /opt/njcdd/account-api
 ENV NJCDD_ACCOUNT_API_PORT=12100 \
     NJCDD_MONGODB_URI="" \
-    NODE_ENV=production
+    NODE_ENV=testing
 
 COPY package.json tsconfig.json tsoa.json yarn.lock ./
 RUN yarn install --production --pure-lockfile --non-interactive
