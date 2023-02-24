@@ -8,7 +8,9 @@ FROM base as builder
 
 RUN mkdir -p /opt/njcdd/account-api/build
 WORKDIR /opt/njcdd/account-api
-ENV NJCDD_ACCOUNT_API_PORT=12100
+ENV NJCDD_ACCOUNT_API_PORT=12100 \
+    NJCDD_MONGODB_URI="" \
+    NODE_ENV=test
 
 COPY package.json tsconfig.json tsoa.json yarn.lock ./
 RUN yarn install --frozen-lockfile --non-interactive --production=false
@@ -24,7 +26,7 @@ RUN mkdir -p /opt/njcdd/account-api/build
 WORKDIR /opt/njcdd/account-api
 ENV NJCDD_ACCOUNT_API_PORT=12100 \
     NJCDD_MONGODB_URI="" \
-    NODE_ENV=testing
+    NODE_ENV=test
 
 COPY package.json tsconfig.json tsoa.json yarn.lock ./
 RUN yarn install --production --pure-lockfile --non-interactive

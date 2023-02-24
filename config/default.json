@@ -4,12 +4,6 @@
       "source": "./data/source"
     },
     "database": {
-      "runtime": {
-        "development": "TestDatabase",
-        "testing": "TestDatabase",
-        "staging": "MongoDatabase",
-        "production": "MongoDatabase"
-      },
       "name": "njcdd",
       "table": {
         "account": "contact",

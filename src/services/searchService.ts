@@ -11,8 +11,7 @@ import { Database } from '../models/database'
 export { FieldAttribute, FieldAttributes, Query }
 
 const fieldCatalog = require('../../data/source/search.json') as SearchCatalog
-const apiRuntimeEnv = config.get<string>('api.env')
-const runtimeDatabase = config.get<string>(`api.database.runtime.${apiRuntimeEnv}`)
+const runtimeDatabase = config.get<string>('api.database.runtime')
 
 const fieldNames = keys(fieldCatalog) || [] as const
 type FieldName = typeof fieldNames[number]
