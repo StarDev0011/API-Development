@@ -16,7 +16,7 @@ const databaseName: string = config.get('api.database.name')
 const accountCollectionName: string = config.get('api.database.table.account')
 const accountViewCollectionName: string = config.get('api.database.table.accountView')
 const queryCollection: string = config.get('api.database.table.query')
-const mongodbUrl: string = config.get('api.database.mongodb.url')
+const mongodbUrl: string = config.get('api.database.mongodb.url') || ''
 const upsertOptions = {
   upsert: true,
   returnNewDocument: true,

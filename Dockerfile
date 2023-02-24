@@ -13,7 +13,7 @@ ENV NJCDD_ACCOUNT_API_PORT=12100 \
     NODE_ENV=test
 
 COPY package.json tsconfig.json tsoa.json yarn.lock ./
-RUN yarn install --frozen-lockfile --non-interactive --production=false
+RUN yarn install --production=false --frozen-lockfile --non-interactive
 
 COPY . .
 RUN yarn build && yarn test
