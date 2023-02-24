@@ -2,10 +2,10 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { isString, isUndefined } from 'lodash'
+import { isNull, isString } from 'lodash'
 import { Body, Get, Path, Post, Query, Route } from 'tsoa'
 import { inject, provideSingleton } from '../ioc'
-import { FieldAttributes, QueryCatalog, QueryItem, SearchService } from '../services/searchService'
+import { FieldAttributes, Query as QueryItem, SearchService } from '../services/searchService'
 
 @Route('search')
 @provideSingleton(SearchController)
@@ -51,15 +51,14 @@ export class SearchController {
 
   /**
    * Return a array of saved queries
-   * @param {string | null} owner
-   * @returns {Promise<QueryCatalog>}
+   * @returns {Promise<Array<QueryItem>>}
    */
-  @Get('queries')
-  public async getQueries(@Query() owner?: string | null): Promise<QueryCatalog> {
+  @Get('query/list')
+  public async getQueries(): Promise<Array<QueryItem>> {
     return Promise
-      .resolve(isString(owner) ? decodeURIComponent(owner) : undefined)
-      .then((decodedOwner?: string) => {
-        return this.searchService.queryList(decodedOwner)
+      .resolve(this.searchService.queryList())
+      .then((result: Array<QueryItem>) => {
+        return result
       })
       .catch((err: Error | string) => {
         console.error(err)
@@ -72,15 +71,15 @@ export class SearchController {
    * @param {string} queryId
    * @returns {Promise<QueryItem>}
    */
-  @Get('query/{queryId}')
+  @Get('query/id/{queryId}')
   public async getQuery(@Path() queryId: string): Promise<QueryItem> {
     return Promise
       .resolve(decodeURIComponent(queryId))
       .then((decodedId: string) => {
         return this.searchService.queryItem(decodedId)
       })
-      .then((result: QueryItem | undefined) => {
-        if(isUndefined(result)) {
+      .then((result: QueryItem | null) => {
+        if(isNull(result)) {
           throw new Error(`Cannot locate Query Id ${queryId}`)
         }
 
@@ -102,7 +101,7 @@ export class SearchController {
     return Promise
       .resolve(this.searchService.querySave(queryItem))
       .then((result: string) => {
-        return {queryId: result}
+        return {_id: result}
       })
       .catch((err: Error | string) => {
         console.error(err)

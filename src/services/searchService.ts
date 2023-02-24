@@ -2,36 +2,17 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import {
-  filter,
-  find,
-  get,
-  isPlainObject,
-  isString,
-  isUndefined,
-  keys,
-  mapValues,
-  omit,
-  pickBy,
-  reduce,
-  startCase,
-  trim,
-} from 'lodash'
-import { provideSingleton } from '../ioc'
-import {
-  Content,
-  FieldAttribute,
-  FieldAttributes,
-  QueryCatalog,
-  QueryItem,
-  Search,
-  SearchCatalog,
-} from '../models/search'
+import { isUndefined, keys, mapValues, omit, pickBy, reduce, startCase, trim } from 'lodash'
+import { inject, provideSingleton } from '../ioc'
+import { Content, FieldAttribute, FieldAttributes, Query, Search, SearchCatalog } from '../models/search'
+import config from 'config'
+import { Database } from '../models/database'
 
-export { FieldAttribute, FieldAttributes, QueryCatalog, QueryItem }
+export { FieldAttribute, FieldAttributes, Query }
 
 const fieldCatalog = require('../../data/source/search.json') as SearchCatalog
-const queryCatalog = require('../../data/source/query.json') as QueryCatalog
+const apiRuntimeEnv = config.get<string>('api.env')
+const runtimeDatabase = config.get<string>(`api.database.runtime.${apiRuntimeEnv}`)
 
 const fieldNames = keys(fieldCatalog) || [] as const
 type FieldName = typeof fieldNames[number]
@@ -43,39 +24,11 @@ function contentToObject(contents: Array<Content>): Record<string, string> {
   }, {})
 }
 
-async function isValidOwner(owner: string): Promise<void> {
-  return Promise
-    .resolve(isString(owner))
-    .then((result: boolean) => {
-      if(!result) {
-        throw new Error(`Invalid Query Owner: ${owner}`)
-      }
-
-      return
-    })
-}
-
-async function isValidQuery(query: QueryItem): Promise<void> {
-  return Promise
-    .resolve(isPlainObject(query))
-    .then((result: boolean) => {
-      if(!result) {
-        throw new Error(`Invalid Query: ${query}`)
-      }
-
-      return
-    })
-    .then(() => {
-      return isValidOwner(get(query, 'owner'))
-    })
-    .then(() => {
-      return
-    })
-
-}
-
 @provideSingleton(SearchService)
 export class SearchService {
+  constructor(@inject(runtimeDatabase) private database: Database) {
+  }
+
   public async fieldContent(fieldName: FieldName): Promise<Record<string, string>> {
     return Promise
       .resolve(fieldName)
@@ -118,26 +71,18 @@ export class SearchService {
       })
   }
 
-  public async queryList(owner?: string | null): Promise<QueryCatalog> {
+  public async queryList(): Promise<Array<Query>> {
     return Promise
-      .resolve(queryCatalog)
-      .then((catalog: QueryCatalog) => {
-        return owner ? filter(catalog, ['owner', owner]) : catalog
-      })
+      .resolve(this.database.queryList())
   }
 
-  public async queryItem(queryId: string): Promise<QueryItem | undefined> {
+  public async queryItem(queryId: string): Promise<Query | null> {
     return Promise
-      .resolve(queryCatalog)
-      .then((catalog: QueryCatalog) => {
-        return find(catalog, ['_id.$oid', queryId])
-      })
+      .resolve(this.database.queryItem(queryId))
   }
 
-  public async querySave(query: QueryItem): Promise<string> {
-    return isValidQuery(query)
-      .then(() => {
-        return get(query, '_id.$oid') || ''
-      })
+  public async querySave(query: Query): Promise<string> {
+    return Promise
+      .resolve(this.database.querySave(query))
   }
 }

@@ -2,7 +2,7 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { get, isArray, isNull, isPlainObject, sampleSize } from 'lodash'
+import { get, isArray, isNull, isPlainObject, sampleSize, toString } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
 import { Account } from '../models/account'
@@ -27,6 +27,7 @@ describe('AccountController', () => {
     const path = isNull(category) ? 'list' : 'category'
     const testURL: string = `${suiteURL}/${path}/${category ?? ''}`
 
+    // noinspection DuplicatedCode
     it(`Should GET ${testURL}`, async() => {
       const response = await request(app)
         .get(testURL)
@@ -42,7 +43,7 @@ describe('AccountController', () => {
   describe.each<Account>(
     accountSample,
   )(`Account '${account._id}'`, (account: Account) => {
-    const accountId = get(account, '_id', '')
+    const accountId = toString(get(account, '_id', ''))
     const testURL = `${suiteURL}/id/${encodeURIComponent(accountId)}`
 
     it(`Should GET ${testURL}`, async() => {

@@ -18,7 +18,7 @@ type VerifiedStatus = string
 //   Telephone | Address | SocialMedia | Subscription
 
 export interface Account {
-  id?: ObjectId
+  _id?: ObjectId | string
   address: string | null
   address2: string | null
   addressVerified: string | null

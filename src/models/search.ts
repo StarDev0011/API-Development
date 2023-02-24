@@ -2,9 +2,7 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-export interface _id {
-  '$oid': string
-}
+import { ObjectId } from 'mongodb'
 
 export interface Search extends FieldAttribute {
   content: Array<Content>
@@ -29,17 +27,10 @@ export interface FieldAttributes extends Record<string, FieldAttribute> {
 }
 
 export interface Query {
-  _id: _id
-}
-
-export interface QueryCatalog extends Array<QueryItem> {
-}
-
-export interface QueryItem {
-  _id: _id
+  _id?: string | ObjectId
   owner: string
   name: string
   group: string | null
   comment: string | null
-  queries: Array<Query>
+  attributes: Record<string, unknown>
 }

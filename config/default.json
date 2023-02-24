@@ -12,9 +12,10 @@
       },
       "name": "njcdd",
       "table": {
-        "account": "accounts",
-        "accounts": "accounts",
-        "accountView": "accountMain"
+        "account": "contact",
+        "accounts": "contact",
+        "accountView": "accountView",
+        "query": "queryCatalog"
       }
     }
   }

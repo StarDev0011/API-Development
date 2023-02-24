@@ -1,32 +1,18 @@
 [
   {
-    "_id": {
-      "$oid": "1000"
-    },
-    "owner": "tester.01@njcdd.org",
-    "name": "Tester01's Lists",
+    "_id": "63f82b55f6fac9595a07b35d",
+    "owner": "admin",
+    "name": "Everyone",
     "group": null,
     "comment": null,
-    "queries": []
+    "attributes": {}
   },
   {
-    "_id": {
-      "$oid": "1001"
-    },
-    "owner": "tester.02@njcdd.org",
-    "name": "Tester02's Lists",
+    "_id": "63f82b55f6fac9595a07b35e",
+    "owner": "admin",
+    "name": "People and Families",
     "group": null,
     "comment": null,
-    "queries": []
-  },
-  {
-    "_id": {
-      "$oid": "1002"
-    },
-    "owner": "tester.01@njcdd.org",
-    "name": "Tester01's Other Lists",
-    "group": null,
-    "comment": null,
-    "queries": []
+    "attributes": {}
   }
 ]

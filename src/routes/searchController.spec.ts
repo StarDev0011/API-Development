@@ -2,23 +2,26 @@
  * Copyright © 2023 Anthony Software Group, LLC • All Rights Reserved
  */
 
-import { get, has, isArray, isNull, isPlainObject, isUndefined, keys } from 'lodash'
+import { get, has, isArray, isPlainObject, isUndefined, keys, sampleSize } from 'lodash'
 import request from 'supertest'
 import { app } from '../app'
+import { Query } from '../models/search'
 import DoneCallback = jest.DoneCallback
 
-type TestContentTuple = [ string | undefined ]
-type TestAttributesTuple = [ string | undefined, number ]
-type TestQueryTuple = [ string | null | undefined, number ]
+type TestContentTuple = [string | undefined]
+type TestAttributesTuple = [string | undefined, number]
 
 const suiteURL: string = '/api/v1/search'
+const queryCatalog: Array<Query> = require('../../data/source/query.json')
+const querySample: Array<Query> = sampleSize(queryCatalog, 2)
+
 
 describe(`SearchController`, () => {
 
   describe.each<TestContentTuple>([
-    [ 'Language' ],
-    [ 'Role' ],
-    [ 'Interests' ]
+    ['Language'],
+    ['Role'],
+    ['Interests'],
   ])('Search Field Content', (fieldName?: string) => {
     const field: string = isUndefined(fieldName) ? '' : fieldName + ''
     const testURL = `${suiteURL}/field/${field}`
@@ -35,9 +38,9 @@ describe(`SearchController`, () => {
   })
 
   describe.each<TestAttributesTuple>([
-    [ 'HonorificPrefix', 1 ],
-    [ 'HonorificSuffix', 1 ],
-    [ undefined, 20 ]
+    ['HonorificPrefix', 1],
+    ['HonorificSuffix', 1],
+    [undefined, 20],
   ])('Search Field Attributes', (fieldName: string | undefined, keyCount: number) => {
     const query: string = isUndefined(fieldName) ? '' : `?field=${fieldName}`
     const testURL = `${suiteURL}/attributes/${query}`
@@ -53,68 +56,64 @@ describe(`SearchController`, () => {
     })
   })
 
-  describe.each<TestQueryTuple>([
-    [ 'tester01@njcdd.org', 2 ],
-    [ 'tester02@njcdd.org', 1 ],
-    [ 'nonexistent', 0 ],
-    [ undefined, 3 ],
-    [ null, 3 ]
-  ])('Query List', (owner: string | null | undefined, queryCount: number) => {
-    const query: string = isUndefined(owner) || isNull(owner) ? '' : `?owner=${owner}`
-    const testURL = `${suiteURL}/queries/${query}`
+  describe('Query List', () => {
+    const testURL = `${suiteURL}/query/list/`
+    const expectedCount = 2
 
-    it(`GET ${testURL}`, (done: DoneCallback) => {
-      request(app)
+    // noinspection DuplicatedCode
+    it(`Should GET ${testURL}`, async() => {
+      const response = await request(app)
         .get(testURL)
-        .expect(200)
-        .expect('Content-Type', /json/)
-        .expect(response => isArray(response.body))
-        .expect(response => response.body.length === queryCount)
-        .end(done)
+        .set('Accept', 'application/json')
+
+      expect(response.status).toEqual(200)
+      expect(response.headers['content-type']).toMatch(/json/)
+      expect(isArray(response.body)).toBeTruthy()
+      expect(response.body.length).toEqual(expectedCount)
     })
   })
 
-  describe.each<TestQueryTuple>([
-    [ '1000', 6 ],
-    [ '1001', 6 ]
-  ])('Query Item', (queryId: string | null | undefined, queryKeyCount: number) => {
-    const testURL = `${suiteURL}/query/${queryId ?? ''}`
+  describe.each<Query>(
+    querySample,
+  )('Query Item', (query: Query) => {
+    const queryId = get(query, '_id')
+    const testURL = `${suiteURL}/query/id/${queryId}`
 
-    it(`GET ${testURL}`, (done: DoneCallback) => {
-      request(app)
+    it(`Should GET ${testURL}`, async() => {
+      const response = await request(app)
         .get(testURL)
-        .expect(200)
-        .expect('Content-Type', /json/)
-        .expect(response => isPlainObject(response.body))
-        .expect(response => keys(response.body).length === queryKeyCount)
-        .end(done)
+        .set('Accept', 'application/json')
+
+      expect(response.status).toEqual(200)
+      expect(response.headers['content-type']).toMatch(/json/)
+      expect(isPlainObject(response.body)).toBeTruthy()
+      expect(has(response.body, '_id')).toBeTruthy()
+      expect(response.body).toMatchObject(query)
     })
   })
 
   describe('Save Query', () => {
     const testURL = `${suiteURL}/query`
     const testQuery = {
-      '_id': {
-        '$oid': '9000'
-      },
-      'owner': 'tester.02@njcdd.org',
-      'name': 'Tester02\'s Lists',
+      'owner': 'tester.01@njcdd.org',
+      'name': 'Test List',
       'group': null,
       'comment': null,
-      'queries': []
+      'attributes': {},
     }
 
-    it(`POST ${testURL}`, done => {
-      request(app)
+    it(`Should POST ${testURL}`, async() => {
+      const response = await request(app)
         .post(testURL)
         .type('json')
         .send(testQuery)
-        .expect(200)
-        .expect('Content-Type', /json/)
-        .expect(response => isPlainObject(response.body))
-        .expect(response => has(response.body, 'queryId'))
-        .expect(response => get(response.body, '_id.$iod') === '9000')
-        .end(done)
+        .set('Accept', 'application/json')
+
+      expect(response.status).toEqual(200)
+      expect(response.headers['content-type']).toMatch(/json/)
+      expect(isPlainObject(response.body)).toBeTruthy()
+      expect(has(response.body, '_id')).toBeTruthy()
+      expect(response.body._id).toMatch(/[a-z0-9]{24}/)
     })
   })
 
