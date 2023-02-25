@@ -26,6 +26,12 @@ export interface FieldAttribute {
 export interface FieldAttributes extends Record<string, FieldAttribute> {
 }
 
+export interface filterItem {
+  field: string,
+  operator: string,
+  value: string,
+  [key:string]: string
+}
 export interface Query {
   _id?: string | ObjectId
   owner: string
@@ -33,4 +39,5 @@ export interface Query {
   group: string | null
   comment: string | null
   attributes: Record<string, unknown>
+  filters: Array<filterItem>
 }
