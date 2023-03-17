@@ -40,4 +40,5 @@ export interface Query {
   comment: string | null
   attributes: Record<string, unknown>
   filters: Array<filterItem>
+  logic: string | null
 }
